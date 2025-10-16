@@ -58,8 +58,7 @@ if os.name == "nt":  # Windows
     os.system("cls")
 else:  # Unix/Linux/Mac
     os.system("clear")
-    
- print("""
+print("""
  \033[38;5;39m 
  \033[38;5;39m
  \033[38;5;39m
