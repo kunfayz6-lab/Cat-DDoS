@@ -38,16 +38,16 @@ class colors:
     RESET_REVERSE = '\033[27m'
     RESET_HIDDEN = '\033[28m'
     RESET_STRIKETHROUGH = '\033[29m'
-    ORANGE = '\033[38;5;214m'  # Light Orange
-    PURPLE = '\033[38;5;141m'  # Light Purple
-    TEAL = '\033[38;5;37m'     # Teal
-    PINK = '\033[38;5;206m'    # Light Pink
-    LIME = '\033[38;5;154m'    # Lime Green
-    CYAN_BLUE = '\033[38;5;39m'  # Cyan Blue
-    DARK_GREEN = '\033[38;5;22m'  # Dark Green
-    SKY_BLUE = '\033[38;5;111m'  # Sky Blue
-    DARK_ORANGE = '\033[38;5;166m'  # Dark Orange
-    INDIGO = '\033[38;5;57m'   # Indigo
+    ORANGE = '\033[38;5;214m' 
+    PURPLE = '\033[38;5;141m'  
+    TEAL = '\033[38;5;37m'     
+    PINK = '\033[38;5;206m'    
+    LIME = '\033[38;5;154m'    
+    CYAN_BLUE = '\033[38;5;39m'  
+    DARK_GREEN = '\033[38;5;22m' 
+    SKY_BLUE = '\033[38;5;111m'  
+    DARK_ORANGE = '\033[38;5;166m' 
+    INDIGO = '\033[38;5;57m'  
     GRAY = '\033[38;5;242m'   
     MAROON = '\033[38;5;52m'   
     OCEAN_BLUE = '\033[38;5;21m'  
@@ -57,8 +57,8 @@ class colors:
 while True:
  os.system('cls' if os.name == 'nt' else 'clear')
 
- os.system('clear')
- print('''
+ os.system("clear")
+ print("""
  \033[38;5;39m 
  \033[38;5;39m
  \033[38;5;39m
@@ -80,7 +80,7 @@ while True:
 ║\033[96m                           By: Aby'Walidein                      \033[31m║
 ║\033[37m                               ——o0o——                           \033[31m║
 ╚ ═════════════════════════════════════════════════════════════════╝
-''')
+""")
 ask = fade.pinkred("\033[33m==⟩⟩ RUN SC BUTUH WKT 35 DETIK DG TARGET URL: \033[0m")
 url = input(ask)
 print("\033[96mMOHON BERSABAR KARENA INI BUKAN UJIAN..! 🤭\033[0m")
