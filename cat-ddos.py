@@ -2,29 +2,86 @@
 # -*- coding: utf-8 -*-
 import asyncio
 import aiohttp
-import fade
 import os
 # Clear command prompt based on the operating system
-if os.name == "nt":  # Windows
-    os.system("cls")
-else:  # Unix/Linux/Mac
-    os.system("clear")
+# Clearing the SCREEN
+class colors:
+    BLACK = '\033[30m'
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    YELLOW = '\033[33m'
+    BLUE = '\033[34m'
+    MAGENTA = '\033[35m'
+    CYAN = '\033[36m'
+    LIGHT_GRAY = '\033[37m'
+    DARK_GRAY = '\033[90m'
+    LIGHT_RED = '\033[91m'
+    LIGHT_GREEN = '\033[92m'
+    LIGHT_YELLOW = '\033[93m'
+    LIGHT_BLUE = '\033[94m'
+    LIGHT_MAGENTA = '\033[95m'
+    LIGHT_CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+    DIM = '\033[2m'
+    ITALIC = '\033[3m'
+    UNDERLINE = '\033[4m'
+    BLINK = '\033[5m'
+    REVERSE = '\033[7m'
+    HIDDEN = '\033[8m'
+    STRIKETHROUGH = '\033[9m'
+    DOUBLE_UNDERLINE = '\033[21m'
+    NORMAL_COLOR = '\033[22m'
+    NORMAL_INTENSITY = '\033[22m'
+    RESET_UNDERLINE = '\033[24m'
+    RESET_BLINK = '\033[25m'
+    RESET_REVERSE = '\033[27m'
+    RESET_HIDDEN = '\033[28m'
+    RESET_STRIKETHROUGH = '\033[29m'
+    ORANGE = '\033[38;5;214m'  # Light Orange
+    PURPLE = '\033[38;5;141m'  # Light Purple
+    TEAL = '\033[38;5;37m'     # Teal
+    PINK = '\033[38;5;206m'    # Light Pink
+    LIME = '\033[38;5;154m'    # Lime Green
+    CYAN_BLUE = '\033[38;5;39m'  # Cyan Blue
+    DARK_GREEN = '\033[38;5;22m'  # Dark Green
+    SKY_BLUE = '\033[38;5;111m'  # Sky Blue
+    DARK_ORANGE = '\033[38;5;166m'  # Dark Orange
+    INDIGO = '\033[38;5;57m'   # Indigo
+    GRAY = '\033[38;5;242m'   
+    MAROON = '\033[38;5;52m'   
+    OCEAN_BLUE = '\033[38;5;21m'  
+    GOLD = '\033[38;5;220m' 
 
-logo = """
-         _/       _/     _/ _/      _/ _/ _/           _/ _/ _/
-        _/       _/  _/       _/  _/       _/                 _/
-       _/       _/  _/       _/  _/       _/                  _/
-      _/ _/ _/ _/  _/       _/  _/       _/  _/ _/    _/ _/ _/
-     _/       _/  _/ _/ _/ _/  _/   _/  _/                   _/
-    _/       _/  _/       _/   _/ _/ _/                      _/
-                                  _/                 _/ _/ _/                                                                                 
+
+while True:
+ os.system('cls' if os.name == 'nt' else 'clear')
+
+os.system("clear")
+print('''
+ \033[38;5;39m 
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;39m 
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;39m
+ \033[38;5;52m╔══╗╗     ╔
+ \033[38;5;52m║║    ║║  ║ 
+ \033[38;5;52m║║    ╚║  ╝
+ \033[38;5;52m║║      ║║
+ \033[38;5;52m╚══╝  ╚╝
 ╔═════════════════════════════════════════════════════════════════╗
 ║\033[33m                ~ H U D A I R U L  A L - A Q S H A ~             \033[31m║
 ║\033[32m                    I N T E R N A L  S C R I P T                 \033[31m║
 ║\033[96m                           By: Aby'Walidein                      \033[31m║
 ║\033[37m                               ——o0o——                           \033[31m║
-╚═════════════════════════════════════════════════════════════════╝
-"""
+╚ ═════════════════════════════════════════════════════════════════╝
+''')
 faded_text = fade.fire(logo)
 print(faded_text)
 ask = fade.pinkred("\033[33m==⟩⟩ RUN SC BUTUH WKT 35 DETIK DG TARGET URL: \033[0m")
@@ -39,7 +96,7 @@ async def increment_view_count(session):
             else:
                 print("\033[33m[*] \033[33mHUDAIRUL-AQSHA \033[36m Attack  \033[35m" +str(url)+ "  \033[93mHacking\033[0m")
     except aiohttp.ClientError as e:
-            print("\033[31m[!] \033[32mHUDAIRUL-AQSHA \033[31m Attack  \033[33m" +str(url)+ "  \033[37mMaybe down!\033[0m")
+            print("\033[31m[!] \033[32mHUDAIRUL-AQSHA \033[31m Attack  \033[33m" +str(url)+ "  \033[37mMayb down!\033[0m")
 
 async def main():
     connector = aiohttp.TCPConnector(limit=None)  # Enable connection pooling
