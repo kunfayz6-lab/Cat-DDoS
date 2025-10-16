@@ -4,7 +4,6 @@ import asyncio
 import aiohttp
 import os
 # Clear command prompt based on the operating system
-# Clearing the SCREEN
 class colors:
     BLACK = '\033[30m'
     RED = '\033[31m'
@@ -58,7 +57,7 @@ class colors:
 while True:
  os.system('cls' if os.name == 'nt' else 'clear')
 
-os.system("clear")
+   os.system('clear')
 print('''
  \033[38;5;39m 
  \033[38;5;39m
@@ -82,8 +81,6 @@ print('''
 ║\033[37m                               ——o0o——                           \033[31m║
 ╚ ═════════════════════════════════════════════════════════════════╝
 ''')
-faded_text = fade.fire(logo)
-print(faded_text)
 ask = fade.pinkred("\033[33m==⟩⟩ RUN SC BUTUH WKT 35 DETIK DG TARGET URL: \033[0m")
 url = input(ask)
 print("\033[96mMOHON BERSABAR KARENA INI BUKAN UJIAN..! 🤭\033[0m")
