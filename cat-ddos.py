@@ -53,11 +53,12 @@ class colors:
     OCEAN_BLUE = '\033[38;5;21m'  
     GOLD = '\033[38;5;220m' 
 
-
-while True:
- os.system('cls' if os.name == 'nt' else 'clear')
-
- os.system("clear")
+# Clear command prompt based on the operating system
+if os.name == "nt":  # Windows
+    os.system("cls")
+else:  # Unix/Linux/Mac
+    os.system("clear")
+    
  print("""
  \033[38;5;39m 
  \033[38;5;39m
