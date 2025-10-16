@@ -3,6 +3,7 @@
 import asyncio
 import aiohttp
 import os
+import fade
 # Clear command prompt based on the operating system
 class colors:
     BLACK = '\033[30m'
