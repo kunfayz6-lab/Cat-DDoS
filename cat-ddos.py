@@ -38,30 +38,32 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 def display_header():
-    header_lines = [
-{Fore.GREEN}╔══════════════════════════════════════════════════════╗",
-{Fore.GREEN}║'\033[38;5;220m                \033[0m
-{Fore.GREEN}║'\033[38;5;220m               ,-----,        .---------------     \033[0m 
-{Fore.GREEN}║'\033[38;5;220m             /       \  __  /    ----------     \033[0m
-{Fore.GREEN}║'\033[38;5;220m             / /       \(  )/    --------      \033[0m
-{Fore.GREEN}║'\033[38;5;220m           //////     , \/ -   ------      \033[0m
-{Fore.GREEN}║'\033[38;5;220m          //// / //   :    : -----      \033[0m
-{Fore.GREEN}║'\033[38;5;220m          // /   /     '` " '----     \033[0m
-{Fore.GREEN}║'\033[38;5;220m         // /  //    / //..\\\       \033[0m
-{Fore.GREEN}║'\033[38;5;220m        //          / //'..'\\\       \033[0m         
-{Fore.GREEN}║'\033[38;5;220m                                      \033[0m
-{Fore.GREEN}║'\033[38;5;220m                 ====UU====UU=====    \033[0m
-{Fore.GREEN}║'\033[38;5;220m                      //||\\        \033[0m       
-{Fore.GREEN}║'\033[38;5;220m                    '////||\\\\      \033[0m      
-{Fore.GREEN}║'\033[38;5;220m                        ''``         \033[0m   
-f"{Fore.YELLOW}   ╔═══╗{Fore.CYAN}        ╔══╗{Fore.BLUE}       ╔════╗",
-f"{Fore.YELLOW}   ████╝{Fore.CYAN}        ███║{Fore.BLUE}       █████╝",
-f"{Fore.YELLOW}   █║{Fore.CYAN}            █║  █║{Fore.BLUE}         █║",
-f"{Fore.YELLOW}   █║{Fore.CYAN}           █╚══ █║{Fore.BLUE}        █║",
-f"{Fore.YELLOW}   █╚══╗{Fore.CYAN}      █ ████║{Fore.BLUE}        █║",
-f"{Fore.YELLOW}   ████╝{Fore.CYAN}      █╝    █╝{Fore.BLUE}        █╝",
-f"{Fore.YELLOW}",
-    ]
+os.system(clear)
+print()   
+print("\033[33m╔══════════════════════════════════════════════════════╗\033[0m")
+print("\033[33m║\033[38;5;220m                \033[0m")
+print("\033[33m║\033[38;5;220m               ,-----,        .---------------     \033[0m")
+print("\033[33m║\033[38;5;220m             /       \  __  /    ----------     \033[0m")
+print("\033[33m║\033[38;5;220m             / /       \(  )/    --------      \033[0m")
+print("\033[33m║\033[38;5;220m           //////     , \/ -   ------      \033[0m")
+print("\033[33m║\033[38;5;220m          //// / //   :    : -----      \033[0m")
+print("\033[33m║\033[38;5;220m          // /   /     '` " '----     \033[0m")
+print("\033[33m║\033[38;5;220m         // /  //    / //..\\\       \033[0m")
+print("\033[33m║\033[38;5;220m        //          / //'..'\\\      \033[0m")         
+print("\033[33m║\033[38;5;220m                                      \033[0m")
+print("\033[33m║\033[38;5;220m                 ====UU====UU=====    \033[0m")
+print("\033[33m║\033[38;5;220m                      //||\\        \033[0m")      
+print("\033[33m║\033[38;5;220m                    '////||\\\\      \033[0m")     
+print("\033[33m║\033[38;5;220m                        ''``         \033[0m")  
+print("\033[33m║\033[38;5;220m   ╔═══╗        ╔══╗       ╔════╗\033[0m")
+print("\033[33m║\033[38;5;220m   ████╝        ███║       █████╝\033[0m")
+print("\033[33m║\033[38;5;220m   █║            █║  █║         █║\033[0m")
+print("\033[33m║\033[38;5;220m   █║           █╚══ █║        █║\033[0m")
+print("\033[33m║\033[38;5;220m   █╚══╗      █ ████║       █║\033[0m")
+print("\033[33m║\033[38;5;220m   ████╝      █╝    █╝        █╝\033[0m")
+print("\033[33m║\033[38;5;220m\033[0")
+
+    header_lines = []
     for line in header_lines:
         print(line)
     # Versi dan URL
@@ -69,8 +71,8 @@ f"{Fore.YELLOW}",
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
     print(f"{Fore.RED}╔{'═' * 55}╗")
 
-
-def countdown(t):
+]
+def countdown(t):0
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
