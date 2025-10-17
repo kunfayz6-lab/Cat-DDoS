@@ -40,7 +40,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [
 f"{Fore.GREEN}╔══════════════════════════════════════════════════════╗",
-f"{Fore.GREEN}║","\033[38;5;220m                \033[0m"
+f"{Fore.GREEN}║","\033[38;5;220m                \033[0m
 f"{Fore.GREEN}║","\033[38;5;220m               ,-----,        .---------------     \033[0m 
 f"{Fore.GREEN}║","\033[38;5;220m             /       \  __  /    ----------     \033[0m
 f"{Fore.GREEN}║","\033[38;5;220m             / /       \(  )/    --------      \033[0m
