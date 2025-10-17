@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3.11
-import os
 import time
 import datetime
 import asyncio
@@ -15,7 +14,6 @@ import validators
 import aiohttp
 from colorama import Fore, Style, init
 
-
 # Init color & logging
 init(autoreset=True)
 logging.basicConfig(
@@ -24,7 +22,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
-
 
 def log_attack_status(message, level='info', print_to_terminal=True):
     if level == 'info':
@@ -40,57 +37,8 @@ def log_attack_status(message, level='info', print_to_terminal=True):
         if print_to_terminal:
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
-class colors:
-    BLACK = '\033[30m'
-    RED = '\033[31m'
-    GREEN = '\033[32m'
-    YELLOW = '\033[33m'
-    BLUE = '\033[34m'
-    MAGENTA = '\033[35m'
-    CYAN = '\033[36m'
-    LIGHT_GRAY = '\033[37m'
-    DARK_GRAY = '\033[90m'
-    LIGHT_RED = '\033[91m'
-    LIGHT_GREEN = '\033[92m'
-    LIGHT_YELLOW = '\033[93m'
-    LIGHT_BLUE = '\033[94m'
-    LIGHT_MAGENTA = '\033[95m'
-    LIGHT_CYAN = '\033[96m'
-    WHITE = '\033[97m'
-    RESET = '\033[0m'
-    BOLD = '\033[1m'
-    DIM = '\033[2m'
-    ITALIC = '\033[3m'
-    UNDERLINE = '\033[4m'
-    BLINK = '\033[5m'
-    REVERSE = '\033[7m'
-    HIDDEN = '\033[8m'
-    STRIKETHROUGH = '\033[9m'
-    DOUBLE_UNDERLINE = '\033[21m'
-    NORMAL_COLOR = '\033[22m'
-    NORMAL_INTENSITY = '\033[22m'
-    RESET_UNDERLINE = '\033[24m'
-    RESET_BLINK = '\033[25m'
-    RESET_REVERSE = '\033[27m'
-    RESET_HIDDEN = '\033[28m'
-    RESET_STRIKETHROUGH = '\033[29m'
-    ORANGE = '\033[38;5;214m' 
-    PURPLE = '\033[38;5;141m'  
-    TEAL = '\033[38;5;37m'     
-    PINK = '\033[38;5;206m'    
-    LIME = '\033[38;5;154m'    
-    CYAN_BLUE = '\033[38;5;39m'  
-    DARK_GREEN = '\033[38;5;22m' 
-    SKY_BLUE = '\033[38;5;111m'  
-    DARK_ORANGE = '\033[38;5;166m' 
-    INDIGO = '\033[38;5;57m'  
-    GRAY = '\033[38;5;242m'   
-    MAROON = '\033[38;5;52m'   
-    OCEAN_BLUE = '\033[38;5;21m'  
-    GOLD = '\033[38;5;220m' 
-    
 def display_header():
-    header_lines = ["""
+    header_lines = [
 \033[95m
 \033[95m                .---.        .-----------
 \033[95m               /     \  __  /    ------
@@ -110,7 +58,7 @@ def display_header():
 \033[38;5;52m █╚══╗█ ████║  █║
 \033[38;5;52m ████╝█╝    █╝  █╝
 
-   """ ]
+    ]
     for line in header_lines:
         print(line)
     # Versi dan URL
