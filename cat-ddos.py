@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 import asyncio
 import aiohttp
-import os
 import fade
-# Clear command prompt based on the operating system
+import os
+
 class colors:
     BLACK = '\033[30m'
     RED = '\033[31m'
@@ -59,6 +59,8 @@ if os.name == "nt":  # Windows
     os.system("cls")
 else:  # Unix/Linux/Mac
     os.system("clear")
+# Clear command prompt based on the operating system
+
 print("""
  \033[38;5;39m╔═════╗   ╔═══╗    ╔═══════╗
  \033[38;5;39m██████╝   ████ ║   ████████║
