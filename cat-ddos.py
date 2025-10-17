@@ -63,9 +63,9 @@ f"{Fore.YELLOW}",
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.2.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
-    print(f"{Fore.CYAN}|{'=' * 74}|")
+    print(f"{Fore.CYAN}╔{'═' * 55}╗")
 
 
 def countdown(t):
@@ -75,8 +75,7 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
-            print(f"\r{Fore.RED} ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ {Fore.CYAN}▒▒ ▒▒ ▒▒ ▒▒ ▒▒")
-            print(f"\r{Fore.GREEN}▒BLACK▒ARMY▒{Fore.WHITE}▒INJECT▒ATTACK▒ ▒ ")
+            print(f"\r{Fore.GREEN}C A T{Fore.WHITE}" +url+ ")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}|▒[÷]▒ {Fore.YELLOW}BLACK-ARMY {Fore.CYAN} Attack has been completed|\n")
