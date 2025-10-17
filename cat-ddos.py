@@ -84,10 +84,11 @@ print("""
 ║\033[37m                               ——o0o——                           \033[31m║
 ╚ ═════════════════════════════════════════════════════════════════╝
 """)
-print(f"\033[38;5;214m╔{'═' * 74}╗\033[0m")
-ask = fade.pinkred("\033[33m==⟩⟩ RUN SC BUTUH WKT 35 DETIK DG TARGET URL: \033[0m")
+print(f"\033[38;5;214m╔{'═' * 69}╗\033[0m")
+ask = fade.pinkred("\033[38;5;214m║\033[33m=⟩⟩ URL TARGET:                              \033[38;5;214m║\033[0m")
+print(f"\033[38;5;214m╚{'═' * 69}╝\033[0m")
 url = input(ask)
-print("\033[96mMOHON BERSABAR KARENA INI BUKAN UJIAN..! 🤭\033[0m")
+print(f"\033[38;5;214m╚{'═' * 69}╝\033[0m")
 
 async def increment_view_count(session):
     try:
@@ -97,7 +98,7 @@ async def increment_view_count(session):
             else:
                 print("\033[33m[*] \033[33mHUDAIRUL-AQSHA \033[36m Attack  \033[35m" +str(url)+ "  \033[93mHacking\033[0m")
     except aiohttp.ClientError as e:
-            print("\033[31m[!] \033[32mHUDAIRUL-AQSHA \033[31m Attack  \033[33m" +str(url)+ "  \033[37mMaybe down!\033[0m")
+            print("\033[31m[!] \033[32mHUDAIRUL-AQSHA \033[31m Atitack  \033[33m" +str(url)+ "  \033[37mMaybe down!\033[0m")
 
 async def main():
     connector = aiohttp.TCPConnector(limit=None)  # Enable connection pooling
