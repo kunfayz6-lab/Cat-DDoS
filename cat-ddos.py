@@ -74,18 +74,18 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
-            print(f"\r{Fore.GREEN}C A T{Fore.WHITE}" +url+ ")
+            stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}║")
+            print(f"\r{Fore.GREEN}C A T{Fore.BLUE}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}|▒[÷]▒ {Fore.YELLOW}BLACK-ARMY {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}|{'=' * 74}|")
+            print(f"{Fore.CYAN}║{'═' * 55}║")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
-    print(f"{Fore.GREEN}|{'=' * 74}|")
+    print(f"{Fore.GREEN}║{' ' * 4}[?] {prompt_message.ljust(63)}|")
+    print(f"{Fore.GREEN}╚{'═' * 55}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 
