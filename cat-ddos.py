@@ -40,10 +40,6 @@ def log_attack_status(message, level='info', print_to_terminal=True):
         if print_to_terminal:
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
-
-def display_header():
-    header_lines = [
-
 class colors:
     BLACK = '\033[30m'
     RED = '\033[31m'
@@ -93,7 +89,7 @@ class colors:
     OCEAN_BLUE = '\033[38;5;21m'  
     GOLD = '\033[38;5;220m' 
     
- def display_header():
+def display_header():
     header_lines = ["""
 \033[95m
 \033[95m                .---.        .-----------
