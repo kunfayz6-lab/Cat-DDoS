@@ -85,8 +85,8 @@ print("""
 ╚ ═════════════════════════════════════════════════════════════════╝
 """)
 print(f"\033[38;5;214m╔{'═' * 65}╗\033[0m")
-ask = fade.pinkred("\033[38;5;214m║\033[33m=⟩⟩ URL TARGET:                                        \033[38;5;214m║\033[0m")
-url = input(ask)(f" \033[38;5;214m║\033[0m")
+ask = fade.pinkred("\033[33m=⟩⟩ URL TARGET:   \033[0m")
+url = input(ask)
 print(f"\033[38;5;214m╚{'═' * 65}╝\033[0m")
 
 async def increment_view_count(session):
