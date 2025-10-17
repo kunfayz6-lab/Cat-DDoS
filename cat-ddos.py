@@ -39,25 +39,26 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 def display_header():
     header_lines = [
-\033[95m
-\033[95m                .---.        .-----------
-\033[95m               /     \  __  /    ------
-\033[95m              / /     \(  )/    -----
-\033[95m             //////   ' \/ `   ---
-\033[95m            //// / // :    : ---
-\033[95m           // /   /  /`    '--
-\033[95m          //          //..\\\
-\033[95m
-\033[95m                 ====UU====UU====
-\033[95m                     '//||\\\`
-\033[95m                       ''``
-\033[38;5;52m ╔═══╗  ╔══╗ ╔════╗
-\033[38;5;52m ████╝  ███║ █████╝
-\033[38;5;52m █║      █║  █║   █║
-\033[38;5;52m █║     █╚══ █║  █║
-\033[38;5;52m █╚══╗█ ████║  █║
-\033[38;5;52m ████╝█╝    █╝  █╝
-
+f"{Fore.GREEN}",
+f"{Fore.GREEN}",
+f"{Fore.GREEN}                .---.        .-----------      ",  
+f"{Fore.GREEN}               /     \  __  /    ------      ",
+f"{Fore.GREEN}              / /     \(  )/    -----      ",
+f"{Fore.GREEN}             //////   ' \/ `   ---      ",
+f"{Fore.GREEN}            //// / // :    : ---      ",
+f"{Fore.GREEN}           // /   /  /`    '--      ", 
+f"{Fore.GREEN}          //          //..\\\       ",
+f"{Fore.GREEN}",
+f"{Fore.GREEN}                 ====UU====UU====      ", 
+f"{Fore.GREEN}                     '//||\\\`          ",
+f"{Fore.GREEN}                       ''``             ",
+f"{Fore.YELLOW}   ╔═══╗{Fore.CYAN}        ╔══╗{Fore.BLUE}       ╔════╗",
+f"{Fore.YELLOW}   ████╝{Fore.CYAN}        ███║{Fore.BLUE}       █████╝",
+f"{Fore.YELLOW}   █║{Fore.CYAN}            █║  █║{Fore.BLUE}         █║",
+f"{Fore.YELLOW}   █║{Fore.CYAN}           █╚══ █║{Fore.BLUE}        █║",
+f"{Fore.YELLOW}   █╚══╗{Fore.CYAN}      █ ████║{Fore.BLUE}        █║",
+f"{Fore.YELLOW}   ████╝{Fore.CYAN}      █╝    █╝{Fore.BLUE}        █╝",
+f"{Fore.YELLOW}",
     ]
     for line in header_lines:
         print(line)
