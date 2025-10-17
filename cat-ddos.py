@@ -86,7 +86,7 @@ print("""
 """)
 print(f"\033[38;5;214m╔{'═' * 65}╗\033[0m")
 ask = fade.pinkred("\033[38;5;214m║\033[33m=⟩⟩ URL TARGET:                                        \033[38;5;214m║\033[0m")
-url = input(ask)
+print(f"\033[38;5;214m║{url} = input(ask)\033[0m")
 print(f"\033[38;5;214m╚{'═' * 65}╝\033[0m")
 
 async def increment_view_count(session):
@@ -103,7 +103,7 @@ async def main():
     connector = aiohttp.TCPConnector(limit=None)  # Enable connection pooling
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = []
-        for _ in range(19999):  # Increase the number of concurrent requests
+        fr _ in range(19999):  # Increase the number of concurrent requests
             task = asyncio.create_task(increment_view_count(session))
             tasks.append(task)
             for i in range(19999):  # Increase the number of concurrent requests
