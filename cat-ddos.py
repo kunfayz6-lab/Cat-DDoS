@@ -86,7 +86,7 @@ print("""
 """)
 print(f"\033[38;5;214m╔{'═' * 65}╗\033[0m")
 ask = fade.pinkred("\033[38;5;214m║\033[33m=⟩⟩ URL TARGET:                                        \033[38;5;214m║\033[0m")
-print(f"\033[38;5;214m║{url} = input(ask)\033[0m")
+url = input(f"\033[38;5;214m║=⟩⟩"+ask+"\033[0m")
 print(f"\033[38;5;214m╚{'═' * 65}╝\033[0m")
 
 async def increment_view_count(session):
