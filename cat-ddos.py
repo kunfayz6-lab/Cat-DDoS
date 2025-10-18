@@ -59,14 +59,14 @@ f"{Fore.GREEN}║{Fore.YELLOW}                              //||\\              
 f"{Fore.GREEN}║{Fore.YELLOW}                            ////||\\\\                       {Fore.GREEN}║ ",     
 f"{Fore.GREEN}║{Fore.YELLOW}                               ''``                          {Fore.GREEN}║ ", 
 f"{Fore.GREEN}║{Fore.BLUE}
-f"{Fore.GREEN}║{Fore.BLUE}                                                                                ╔════╗
-f"{Fore.GREEN}║{Fore.BLUE}                                                                             ╔╝╔══╗║ 
-f"{Fore.GREEN}║{Fore.BLUE}                                                                   ╔╗      ╔═╝╔═╝╔╝
-f"{Fore.GREEN}║{Fore.BLUE}                                                                ╔╝ ╚═══╝       ╔╝
-f"{Fore.GREEN}║{Fore.BLUE}                                                              ╔╝ ╔╗      ╔════╝
-f"{Fore.GREEN}║{Fore.BLUE}                                                         ═══╝ ╔╝ ╚═══╝ ╔╗╔╗     
-f"{Fore.GREEN}║{Fore.BLUE}                                                              ╔╝      ╔╗   ╚╝╚╝
-f"{Fore.GREEN}║{Fore.BLUE}                                                          {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                                                ╔════╗{Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                                             ╔╝╔══╗║ {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                                   ╔╗      ╔═╝╔═╝╔╝{Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                                ╔╝ ╚═══╝       ╔╝   {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                              ╔╝ ╔╗      ╔════╝    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                         ═══╝ ╔╝ ╚═══╝ ╔╗╔╗     {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                              ╔╝      ╔╗   ╚╝╚╝      {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                                       ╚╝                {Fore.GREEN}║ ",
 f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════╝ ",
 
 ]
