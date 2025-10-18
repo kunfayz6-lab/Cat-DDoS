@@ -65,7 +65,7 @@ f"{Fore.GREEN}║{Fore.BLUE}                                 ╔╗║║   ╔�
 f"{Fore.GREEN}║{Fore.BLUE}                             ╚═══╝║║║  ╔╝╚══╝  ╔╝   {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                                 ╔╝╚╝     ╔╝╔╗    ╔═══╝     {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                             ╚═══╝╔═══╝╔╝╚═══╝╔╗╔╗     {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.BLUE}                                 ║     ╔╝    ╔╗    ╚╝╚╝     {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                  ║   ╔╝   ╔╗    ╚╝╚╝     {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                                     ╚═══╝      ╚╝                {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                                                                  {Fore.GREEN}║ ", 
 f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════╝ ",
