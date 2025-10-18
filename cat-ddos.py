@@ -71,9 +71,9 @@ f"{Fore.GREEN}╚═════════════════════
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunfayz/github.com")
-    print(f"{Fore.BLUE}╔{'═' * 60}╗")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
+    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
+    print(f"{Fore.BLUE}╔{'═' * 40}╗")
 
 
 def countdown(t):
