@@ -252,7 +252,7 @@ def confirm_ethical_use(target_host: str) -> bool:
 def launch_attack(target_url, duration, concurrency=10, method='GET', rate_limit=None):
     target = get_target(target_url)
     if not confirm_ethical_use(target['host']):
-        log_attack_status("Dibatalkan oleh pengguna demi keamanan.", level='warning')
+        log_attack_status("Canceled by user for security reasons.", level='warning')
         return
 
     url = f"{target['scheme']}://{target['host']}{target['uri']}"
