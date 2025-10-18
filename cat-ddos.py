@@ -217,9 +217,9 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     p99 = sorted(latencies)[int(0.99 * len(latencies)) - 1] if latencies else 0.0
     rps = summary['total'] / duration if duration > 0 else 0
     # Gaya log penyelesaian seperti file asli
-    stdout.write(f"\r{Fore.GREEN}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
-    print(f"{Fore.CYAN}<{'═' * 50}>")
-    log_attack_status("Test selesai. Ringkasan:")
+    stdout.write(f"\r{Fore.GREEN}••⟩  {Fore.YELLOW}C A T {Fore.RED}—> {Fore.CYAN} Attack has been completed|\n")
+    print(f"{Fore.CYAN}×{'═' * 50}×")
+    log_attack_status("Test Finish. Ringkasan:")
     print(f"{Fore.BLUE} ╚═••⟩ Target     : {url.ljust(58)}")
     print(f"{Fore.BLUE} ╚═••⟩ Duration   : {str(duration)+'s':<58}")
     print(f"{Fore.BLUE} ╚═••⟩ Concurrency: {str(concurrency):<58}")
@@ -231,14 +231,14 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     print(f"{Fore.WHITE}╚═••⟩ RPS (avg)  : {rps:<58.2f}|")
     print(f"{Fore.WHITE}╚═••⟩  Latency ms : avg={avg:.2f} p95={p95:.2f} p99={p99:.2f}{' ' * 20}")
     if summary['by_status']:
-        print(f"{Fore.CYAN}{'••' * 10}")
+        print(f"{Fore.CYAN}{'••' * 15}")
         for code, cnt in summary['by_status'].most_common():
             print(f"{Fore.YELLOW}| HTTP {code:<4}: {str(cnt):<58}|")
     if summary['exceptions']:
-        print(f"{Fore.CYAN}{'••' * 10}")
+        print(f"{Fore.CYAN}{'••' * 15}")
         for name, cnt in summary['exceptions'].most_common():
             print(f"{Fore.RED}| {name:<10}: {str(cnt):<58}|")
-    print(f"{Fore.CYAN}{'••' * 50}")
+    print(f"{Fore.CYAN}{'••' * 15}")
 
 
 def confirm_ethical_use(target_host: str) -> bool:
