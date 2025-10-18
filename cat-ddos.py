@@ -43,7 +43,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 def display_header():
     header_lines = [
-f"{Fore.GREEN}╔══════════════════════════════════════════════════════╗",
+f"{Fore.GREEN}╔══════════════════════════════════════════════════════════╗",
 f"{Fore.GREEN}║{Fore.CYAN}                ",
 f"{Fore.GREEN}║{Fore.CYAN}               .-----,        .---------------     ",
 f"{Fore.GREEN}║{Fore.CYAN}              /       \  __  /    ----------     ",
@@ -65,7 +65,7 @@ f"{Fore.GREEN}║{Fore.YELLOW}   █║           █╚══ █║        █
 f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗      █ ████║       █║     ",
 f"{Fore.GREEN}║{Fore.YELLOW}   ████╝      █╝    █╝        █╝  ",
 f"{Fore.GREEN}║{Fore.YELLOW}      ",
-f"{Fore.YELLOW}╚═════════════════════════════════════════════════════╝ ",
+f"{Fore.GREEN}╚═════════════════════════════════════════════════════════╝ ",
 
 ]
     for line in header_lines:
@@ -73,7 +73,7 @@ f"{Fore.YELLOW}╚════════════════════�
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
-    print(f"{Fore.CYAN}╔{'═' * 60}╗")
+    print(f"{Fore.BLUE}╔{'═' * 60}╗")
 
 
 def countdown(t):
@@ -88,13 +88,13 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.CYAN}╚{'═'  * 74}╝")
+            print(f"{Fore.BLUE}╚{'═'  * 74}╝")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}║{' ' * 4}[😊]{prompt_message.ljust(63)}║")
-    print(f"{Fore.GREEN}╚{'═' * 60}╝")
+    print(f"{Fore.BLUE}║{' ' * 4}😊{prompt_message.ljust(63)}║")
+    print(f"{Fore.BLUE}╚{'═' * 60}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 
