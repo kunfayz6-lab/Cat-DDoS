@@ -76,7 +76,6 @@ print("\033[33m║\033[38;5;220m\033[0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
     print(f"{Fore.RED}╔{'═' * 55}╗")
 
-]
 def countdown(t):0
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
