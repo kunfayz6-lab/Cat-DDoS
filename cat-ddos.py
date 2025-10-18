@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3.11
+import os
 import time
 import datetime
 import asyncio
@@ -14,6 +15,10 @@ import validators
 import aiohttp
 from colorama import Fore, Style, init
 
+class colors:
+    BLACK = '\033[30m'
+    RED = '\033[31m'
+    
 # Init color & logging
 init(autoreset=True)
 logging.basicConfig(
@@ -38,15 +43,15 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 def display_header():
-os.system(clear)
+os.system("clear")
 print()   
 print("\033[33m╔══════════════════════════════════════════════════════╗\033[0m")
 print("\033[33m║\033[38;5;220m                \033[0m")
 print("\033[33m║\033[38;5;220m               ,-----,        .---------------     \033[0m")
-print("\033[33m║\033[38;5;220m             /       \  __  /    ----------     \033[0m")
+print("\033[33m║\033[38;5;220m              /       \  __  /    ----------     \033[0m")
 print("\033[33m║\033[38;5;220m             / /       \(  )/    --------      \033[0m")
-print("\033[33m║\033[38;5;220m           //////     , \/ -   ------      \033[0m")
-print("\033[33m║\033[38;5;220m          //// / //   :    : -----      \033[0m")
+print("\033[33m║\033[38;5;220m            //////     , \/ -   ------      \033[0m")
+print("\033[33m║\033[38;5;220m           //// / //   :    : -----      \033[0m")
 print("\033[33m║\033[38;5;220m          // /   /     '` " '----     \033[0m")
 print("\033[33m║\033[38;5;220m         // /  //    / //..\\\       \033[0m")
 print("\033[33m║\033[38;5;220m        //          / //'..'\\\      \033[0m")         
