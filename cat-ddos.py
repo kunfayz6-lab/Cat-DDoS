@@ -44,6 +44,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 def display_header():
 os.system("clear")
+   header_lines = []
 print()   
 print("\033[33m╔══════════════════════════════════════════════════════╗\033[0m")
 print("\033[33m║\033[38;5;220m                \033[0m")
@@ -68,7 +69,6 @@ print("\033[33m║\033[38;5;220m   █╚══╗      █ ████║     
 print("\033[33m║\033[38;5;220m   ████╝      █╝    █╝        █╝\033[0m")
 print("\033[33m║\033[38;5;220m\033[0")
 
-    header_lines = []
     for line in header_lines:
         print(line)
     # Versi dan URL
