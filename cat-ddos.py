@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3.11
+
 import time
 import datetime
 import asyncio
@@ -13,7 +14,8 @@ import contextlib
 import validators
 import aiohttp
 from colorama import Fore, Style, init
-    
+
+
 # Init color & logging
 init(autoreset=True)
 logging.basicConfig(
@@ -22,6 +24,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
+
 
 def log_attack_status(message, level='info', print_to_terminal=True):
     if level == 'info':
@@ -37,8 +40,9 @@ def log_attack_status(message, level='info', print_to_terminal=True):
         if print_to_terminal:
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
+
 def display_header():
-    header_lines = [ 
+    header_lines = [
 f"{Fore.GREEN}╔══════════════════════════════════════════════════════╗",
 f"{Fore.GREEN}║{Fore.CYAN}                *,
 f"{Fore.GREEN}║{Fore.CYAN}               ,-----,        .---------------     ",
@@ -46,9 +50,9 @@ f"{Fore.GREEN}║{Fore.CYAN}              /       \  __  /    ----------     ",
 f"{Fore.GREEN}║{Fore.CYAN}             / /       \(  )/    --------     ",
 f"{Fore.GREEN}║{Fore.CYAN}            //////     , \/ -   ------     ",
 f"{Fore.GREEN}║{Fore.CYAN}           //// / //   :    : -----     ",
-f"{Fore.GREEN}║{Fore.CYAN}          // /   /     '`  '-----     ",
+f"{Fore.GREEN}║{Fore.CYAN}          // /   /     '`   ,-----     ",
 f"{Fore.GREEN}║{Fore.CYAN}         // /  //    / //..\\\       ",
-f"{Fore.GREEN}║{Fore.CYAN}        //          / //'..'\\\      ",         
+f"{Fore.GREEN}║{Fore.CYAN}        //          / //,..,\\\      ",         
 f"{Fore.GREEN}║{Fore.CYAN}                                     ",
 f"{Fore.GREEN}║{Fore.CYAN}                 ====UU====UU=====    ",
 f"{Fore.GREEN}║{Fore.CYAN}                      //||\\        ",     
