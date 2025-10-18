@@ -44,27 +44,27 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [
 f"{Fore.GREEN}╔════════════════════════════════════════════════════════════╗",
-f"{Fore.GREEN}║{Fore.CYAN}             {Fore.GREEN}║   ",
+f"{Fore.GREEN}║{Fore.CYAN}                                                     {Fore.GREEN}║   ",
 f"{Fore.GREEN}║{Fore.CYAN}                      .-----,        .---------------  {Fore.GREEN}║   ",
 f"{Fore.GREEN}║{Fore.CYAN}                     /       \  __  /    ----------    {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.CYAN}                    / /       \(  )/    --------       {Fore.GREEN}║   ",
-f"{Fore.GREEN}║{Fore.CYAN}                   //////     . \/ -   ------    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                  //// / //   :    : -----    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                 // /   /     '`   ,-----    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                // /  //    / //..\\\      {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}               //          / //,..,\\\     {Fore.GREEN}║ ",         
+f"{Fore.GREEN}║{Fore.CYAN}                   //////     . \/ -   ------          {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}                  //// / //   :    : -----             {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}                 // /   /     '`   ,-----              {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}                // /  //    / //..\\\                  {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}               //          / //,..,\\\                 {Fore.GREEN}║ ",         
 f"{Fore.GREEN}║{Fore.CYAN}              {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                         ====UU====UU=====   {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                              //||\\      {Fore.GREEN}║  ",     
-f"{Fore.GREEN}║{Fore.CYAN}                            ////||\\\\     {Fore.GREEN}║ ",     
-f"{Fore.GREEN}║{Fore.CYAN}                               ''``        {Fore.GREEN}║ ", 
-f"{Fore.GREEN}║{Fore.YELLOW}   ╔═══╗                ╔══╗           ╔════╗ {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}                         ====UU====UU====              {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.CYAN}                              //||\\                   {Fore.GREEN}║  ",     
+f"{Fore.GREEN}║{Fore.CYAN}                            ////||\\\\                 {Fore.GREEN}║ ",     
+f"{Fore.GREEN}║{Fore.CYAN}                               ''``                    {Fore.GREEN}║ ", 
+f"{Fore.GREEN}║{Fore.YELLOW}   ╔═══╗                ╔══╗           ╔════╗  {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.YELLOW}   ████╝               ███║             █████╝ {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █║                  █║  █║                █║    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █║                █╚══ █║                █║  {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗           █ ████║               █║    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   ████╝           █╝    █╝                █╝ {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}     {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █║                  █║  █║                █║     {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █║                █╚══ █║                █║    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗           █ ████║               █║     {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}   ████╝           █╝    █╝                █╝    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                                                {Fore.GREEN}║ ",
 f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════╝ ",
 
 ]
@@ -88,12 +88,12 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.BLUE}╚{'═'  * 74}╝")
+            print(f"{Fore.BLUE}╚{'═'  * 60}╝")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.BLUE}║{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(60)}{Fore.BLUE}║")
+    print(f"{Fore.BLUE}║{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(64)}{Fore.BLUE}║")
     print(f"{Fore.BLUE}╚{'═' * 60}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}═> ").strip()
 
@@ -245,7 +245,7 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
 
 def confirm_ethical_use(target_host: str) -> bool:
     print(f"{Fore.GREEN}| PERINGATAN: Gunakan hanya pada server milik sendiri dengan izin. |")
-    print(f"{Fore.GREEB}| Target: {target_host.ljust(61)}|")
+    print(f"{Fore.GREEN}| Target: {target_host.ljust(61)}|")
     print(f"{Fore.GREEN}| Ketik '12345' untuk melanjutkan: {' ' * 35}|")
     ans = input("    > ").strip().upper()
     return ans == '12345'
