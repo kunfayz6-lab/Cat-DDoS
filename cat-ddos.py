@@ -94,7 +94,7 @@ def countdown(t):
 
 def get_user_input(prompt_message):
     print(f"{Fore.BLUE}║{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(63)}{Fore.BLUE}║")
-    print(f"{Fore.BLUE}╚{Fore.{'═' * 60}╝")
+    print(f"{Fore.BLUE}╚{'═' * 60}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}═> ").strip()
 
 
