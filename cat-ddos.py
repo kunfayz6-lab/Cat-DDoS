@@ -74,7 +74,7 @@ f"{Fore.GREEN}╚═════════════════════
     print(f"{Fore.BLUE}╔{'═' * 59}╗")
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
-    print(f"{Fore.BLUE}╚{'═'  * 60}╝")
+    print(f"{Fore.BLUE}╚{'═'  * 59}╝")
 
 
 def countdown(t):
@@ -257,7 +257,7 @@ def launch_attack(target_url, duration, concurrency=10, method='GET', rate_limit
 
     url = f"{target['scheme']}://{target['host']}{target['uri']}"
     headers = build_default_headers(target['host'])
-    log_attack_status(f"Launch attack {target['host']} for {DURATION} second(s), concurrency={SIZE}...")
+    log_attack_status(f"Launch attack {target['host']} for {duration} second(s), concurrency={concurrency}...")
 
     try:
         summary = asyncio.run(
