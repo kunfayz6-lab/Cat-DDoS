@@ -84,8 +84,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.WHITE}└> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}••⟩  {Fore.GREEN}C A T {Fore.RED}└> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}└>  {Fore.YELLOW}C A T {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}└>  {Fore.GREEN}C A T {Fore.RED}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -182,8 +182,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}└> {Fore.BLUE}C A T {Fore.WHITE} •> {Fore.YELLOW}Request {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.WHITE}└> {Fore.GREEN}C A T {Fore.RED} •> {Fore.CYAN} Attack {Fore.YELLOW}" +str(url)+ ")")
+                print(f"\r{Fore.RED}└> {Fore.BLUE}C A T {Fore.YELLOW} •>  {Fore.WHITE}Request {Fore.GREEN}" +str(url)+ ")")
+                print(f"\r{Fore.WHITE}└> {Fore.GREEN}C A T {Fore.RED} •>  {Fore.CYAN} Attack {Fore.YELLOW}" +str(url)+ ")")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -218,8 +218,8 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     rps = summary['total'] / duration if duration > 0 else 0
     # Gaya log penyelesaian seperti file asli
     stdout.write(f"\r{Fore.GREEN}└> {Fore.YELLOW}C A T {Fore.RED} •> {Fore.CYAN} Attack has been completed\n")
-    print(f"{Fore.CYAN}×{'═' * 50}×")
-    log_attack_status("Test Finish. Ringkasan:")
+    print(f"{Fore.CYAN}╔{'═' * 35}╗")
+    log_attack_status("Test Finish. Summary:")
     print(f"{Fore.BLUE}└> Target     : {url.ljust(58)}")
     print(f"{Fore.BLUE}└> Duration   : {str(duration)+'s':<58}")
     print(f"{Fore.BLUE}└> Concurrency: {str(concurrency):<58}")
@@ -237,7 +237,7 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     if summary['exceptions']:
         print(f"{Fore.CYAN}{'••' * 15}")
         for name, cnt in summary['exceptions'].most_common():
-            print(f"{Fore.BLUE} {name:<10}: {str(cnt):<58}")
+            print(f"{Fore.YELLOW} {name:<10}: {str(cnt):<58}")
     print(f"{Fore.CYAN}{'••' * 15}")
 
 
