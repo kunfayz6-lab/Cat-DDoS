@@ -72,7 +72,7 @@ f"{Fore.GREEN}╚═════════════════════
         print(line)
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
+    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunfayz/github.com")
     print(f"{Fore.BLUE}╔{'═' * 60}╗")
 
 
@@ -93,9 +93,9 @@ def countdown(t):
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.BLUE}║{' ' * 4}😊{prompt_message.ljust(63)}║")
-    print(f"{Fore.BLUE}╚{'═' * 60}╝")
-    return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
+    print(f"{Fore.BLUE}║{Fore.YELLOW}{' ' * 4}😊{prompt_message.ljust(63)}{Fore.BLUE}║")
+    print(f"{Fore.BLUE}╚{Fore.YELLOW}{'═' * 60}{Fore.BLUE}╝")
+    return input(f"{Fore.YELLOW}{' ' * 4}═> ").strip()
 
 
 def get_target(url: str) -> dict:
