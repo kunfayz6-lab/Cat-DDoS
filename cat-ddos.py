@@ -83,9 +83,9 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
-            print(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}••⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
+            print(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.WHITE}└> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}••⟩  {Fore.GREEN}C A T {Fore.RED}└> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -93,8 +93,8 @@ def countdown(t):
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.WHITE}{' ' * 2}😊└••⟩ {Fore.CYAN}{prompt_message.ljust(64)}")
-    return input(f"{Fore.RED}{' ' * 2}💥└••⟩  {Fore.WHITE}").strip()
+    print(f"{Fore.WHITE}{' ' * 2}😊└> {Fore.CYAN}{prompt_message.ljust(64)}")
+    return input(f"{Fore.RED}{' ' * 2}💥└>  {Fore.WHITE}").strip()
 
 
 def get_target(url: str) -> dict:
@@ -179,11 +179,11 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
         async def progress():
             while time.time() < end_ts:
                 remaining = max(0, end_ts - time.time())
-                stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}|")
+                stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.WHITE}••⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+                print(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.WHITE}└> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+                print(f"\r{Fore.WHITE}••⟩  {Fore.GREEN}C A T {Fore.RED}└> {Fore.CYAN} Attack {Fore.MAGENTA}" +str(url)+ ")")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -220,16 +220,16 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     stdout.write(f"\r{Fore.GREEN}••⟩  {Fore.YELLOW}C A T {Fore.RED}—> {Fore.CYAN} Attack has been completed|\n")
     print(f"{Fore.CYAN}×{'═' * 50}×")
     log_attack_status("Test Finish. Ringkasan:")
-    print(f"{Fore.BLUE}└••⟩ Target     : {url.ljust(58)}")
-    print(f"{Fore.BLUE}└••⟩ Duration   : {str(duration)+'s':<58}")
-    print(f"{Fore.BLUE}└••⟩ Concurrency: {str(concurrency):<58}")
-    print(f"{Fore.BLUE}└••⟩ Method     : {method:<58}")
-    print(f"{Fore.BLUE}└••⟩ Rate limit : {('None' if not rate_limit else str(rate_limit)+' req/s'):<58}")
+    print(f"{Fore.BLUE}└•> Target     : {url.ljust(58)}")
+    print(f"{Fore.BLUE}└•> Duration   : {str(duration)+'s':<58}")
+    print(f"{Fore.BLUE}└•> Concurrency: {str(concurrency):<58}")
+    print(f"{Fore.BLUE}└•> Method     : {method:<58}")
+    print(f"{Fore.BLUE}└•> Rate limit : {('None' if not rate_limit else str(rate_limit)+' req/s'):<58}")
     print(f"{Fore.CYAN}{'••' * 15}")
-    print(f"{Fore.WHITE}└••⟩ Requests   : {str(summary['total']):<58}|")
-    print(f"{Fore.WHITE}└••⟩ 2xx/3xx    : {str(summary['ok']):<58}|")
-    print(f"{Fore.WHITE}└••⟩ RPS (avg)  : {rps:<58.2f}|")
-    print(f"{Fore.WHITE}└••⟩ Latency ms : avg={avg:.2f} p95={p95:.2f} p99={p99:.2f}{' ' * 20}")
+    print(f"{Fore.WHITE}└•> Requests   : {str(summary['total']):<58}|")
+    print(f"{Fore.WHITE}└•> 2xx/3xx    : {str(summary['ok']):<58}|")
+    print(f"{Fore.WHITE}└•> RPS (avg)  : {rps:<58.2f}|")
+    print(f"{Fore.WHITE}└•> Latency ms : avg={avg:.2f} p95={p95:.2f} p99={p99:.2f}{' ' * 20}")
     if summary['by_status']:
         print(f"{Fore.CYAN}{'••' * 15}")
         for code, cnt in summary['by_status'].most_common():
@@ -242,10 +242,10 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
 
 
 def confirm_ethical_use(target_host: str) -> bool:
-    print(f"{Fore.GREEN}└••⟩ NOTE: Gunakan hanya pada server milik sendiri dengan izin.")
-    print(f"{Fore.GREEN}└••⟩ Target: {target_host.ljust(61)}")
-    print(f"{Fore.GREEN}└••⟩ Ketik '12345' untuk melanjutkan: {' ' * 35}")
-    ans = input("└••⟩ ").strip().upper()
+    print(f"{Fore.GREEN}└> NOTE: Gunakan hanya pada server milik sendiri dengan izin.")
+    print(f"{Fore.GREEN}└> Target: {target_host.ljust(61)}")
+    print(f"{Fore.GREEN}└> Ketik '12345' untuk melanjutkan: {' ' * 35}")
+    ans = input("└> ").strip().upper()
     return ans == '12345'
 
 
