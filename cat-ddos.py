@@ -57,7 +57,7 @@ f"{Fore.BLUE}║{Fore.GREEN}                           ====UU====UU====         
 f"{Fore.BLUE}║{Fore.YELLOW}          ╔═════════╗            //||\\          ╔═══════╗           {Fore.GREEN}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}          ██████████╝           ////||\\\\       ██████████             {Fore.GREEN}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}          ██║                           ''``          ██║                         {Fore.GREEN}║ ", 
-f"{Fore.BLUE}║{Fore.YELLOW}          ██║                 ╔═══════╗            ██║                   {Fore.GREEN}║ ",         
+f"{Fore.BLUE}║{Fore.YELLOW}          ██║                 ╔═══════╗            ██║               {Fore.GREEN}║ ",         
 f"{Fore.BLUE}║{Fore.YELLOW}          ██║                 ████████╚╗           ██║                   {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}          ██║                ██║      ██║          ██║                     {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}          ██║                ██║      ██║          ██║                     {Fore.GREEN}║ ",
