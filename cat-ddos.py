@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3.11
-import os
 import time
 import datetime
 import asyncio
@@ -14,10 +13,6 @@ import contextlib
 import validators
 import aiohttp
 from colorama import Fore, Style, init
-
-class colors:
-    BLACK = '\033[30m'
-    RED = '\033[31m'
     
 # Init color & logging
 init(autoreset=True)
@@ -43,31 +38,30 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 def display_header():
-os.system("clear")
-   header_lines = [] 
-print("\033[33m╔══════════════════════════════════════════════════════╗\033[0m")
-print("\033[33m║\033[38;5;220m                \033[0m")
-print("\033[33m║\033[38;5;220m               ,-----,        .---------------     \033[0m")
-print("\033[33m║\033[38;5;220m              /       \  __  /    ----------     \033[0m")
-print("\033[33m║\033[38;5;220m             / /       \(  )/    --------      \033[0m")
-print("\033[33m║\033[38;5;220m            //////     , \/ -   ------      \033[0m")
-print("\033[33m║\033[38;5;220m           //// / //   :    : -----      \033[0m")
-print("\033[33m║\033[38;5;220m          // /   /     '`  '-----     \033[0m")
-print("\033[33m║\033[38;5;220m         // /  //    / //..\\\       \033[0m")
-print("\033[33m║\033[38;5;220m        //          / //'..'\\\      \033[0m")         
-print("\033[33m║\033[38;5;220m                                      \033[0m")
-print("\033[33m║\033[38;5;220m                 ====UU====UU=====    \033[0m")
-print("\033[33m║\033[38;5;220m                      //||\\        \033[0m")      
-print("\033[33m║\033[38;5;220m                    '////||\\\\      \033[0m")     
-print("\033[33m║\033[38;5;220m                        ''``         \033[0m")  
-print("\033[33m║\033[38;5;220m   ╔═══╗        ╔══╗       ╔════╗\033[0m")
-print("\033[33m║\033[38;5;220m   ████╝        ███║       █████╝\033[0m")
-print("\033[33m║\033[38;5;220m   █║            █║  █║         █║\033[0m")
-print("\033[33m║\033[38;5;220m   █║           █╚══ █║        █║\033[0m")
-print("\033[33m║\033[38;5;220m   █╚══╗      █ ████║       █║\033[0m")
-print("\033[33m║\033[38;5;220m   ████╝      █╝    █╝        █╝\033[0m")
-print("\033[33m║\033[38;5;220m\033[0")
-
+    header_lines = [ 
+f"{Fore.GREEN}╔══════════════════════════════════════════════════════╗",
+f"{Fore.GREEN}║{Fore.CYAN}                *,
+f"{Fore.GREEN}║{Fore.CYAN}               ,-----,        .---------------     ",
+f"{Fore.GREEN}║{Fore.CYAN}              /       \  __  /    ----------     ",
+f"{Fore.GREEN}║{Fore.CYAN}             / /       \(  )/    --------     ",
+f"{Fore.GREEN}║{Fore.CYAN}            //////     , \/ -   ------     ",
+f"{Fore.GREEN}║{Fore.CYAN}           //// / //   :    : -----     ",
+f"{Fore.GREEN}║{Fore.CYAN}          // /   /     '`  '-----     ",
+f"{Fore.GREEN}║{Fore.CYAN}         // /  //    / //..\\\       ",
+f"{Fore.GREEN}║{Fore.CYAN}        //          / //'..'\\\      ",         
+f"{Fore.GREEN}║{Fore.CYAN}                                     ",
+f"{Fore.GREEN}║{Fore.CYAN}                 ====UU====UU=====    ",
+f"{Fore.GREEN}║{Fore.CYAN}                      //||\\        ",     
+f"{Fore.GREEN}║{Fore.CYAN}                    '////||\\\\      ",     
+f"{Fore.GREEN}║{Fore.CYAN}                        ''``         ", 
+f"{Fore.GREEN}║{Fore.YELLOW}   ╔═══╗        ╔══╗       ╔════╗  ",
+f"{Fore.GREEN}║{Fore.YELLOW}   ████╝        ███║       █████╝   ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █║            █║  █║         █║     ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █║           █╚══ █║        █║   ",
+f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗      █ ████║       █║     ",
+f"{Fore.GREEN}║{Fore.YELLOW}   ████╝      █╝    █╝        █╝  ",
+f"{Fore.GREEN}║{Fore.YELLOW}      ",
+    ]  
     for line in header_lines:
         print(line)
     # Versi dan URL
@@ -85,7 +79,7 @@ def countdown(t):0
             print(f"\r{Fore.GREEN}C A T{Fore.BLUE}" +str(url)+ ")")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.RED}|[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack completed|\n")
+            stdoⁿut.write(f"\r{Fore.RED}|[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack completed|\n")
             print(f"{Fore.WHITE}║{'═' * 55}║")
             return
 
