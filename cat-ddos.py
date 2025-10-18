@@ -44,27 +44,27 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [
 f"{Fore.GREEN}╔════════════════════════════════════════════════════════════╗",
-f"{Fore.GREEN}║{Fore.CYAN}                                                     {Fore.GREEN}║   ",
-f"{Fore.GREEN}║{Fore.CYAN}                      .-----,        .---------------  {Fore.GREEN}║   ",
-f"{Fore.GREEN}║{Fore.CYAN}                     /       \  __  /    ----------    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                    / /       \(  )/    --------       {Fore.GREEN}║   ",
-f"{Fore.GREEN}║{Fore.CYAN}                   //////     . \/ -   ------          {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                  //// / //   :    : -----             {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                 // /   /     '`   ,-----              {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                // /  //    / //..\\\                  {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}               //          / //,..,\\\                 {Fore.GREEN}║ ",         
-f"{Fore.GREEN}║{Fore.CYAN}              {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                         ====UU====UU====              {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.CYAN}                              //||\\                   {Fore.GREEN}║  ",     
-f"{Fore.GREEN}║{Fore.CYAN}                            ////||\\\\                 {Fore.GREEN}║ ",     
-f"{Fore.GREEN}║{Fore.CYAN}                               ''``                    {Fore.GREEN}║ ", 
-f"{Fore.GREEN}║{Fore.YELLOW}   ╔═══╗                ╔══╗           ╔════╗  {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   ████╝               ███║             █████╝ {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █║                  █║  █║                █║     {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █║                █╚══ █║                █║    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗           █ ████║               █║     {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}   ████╝           █╝    █╝                █╝    {Fore.GREEN}║ ",
-f"{Fore.GREEN}║{Fore.YELLOW}                                                {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                                                              {Fore.GREEN}║   ",
+f"{Fore.GREEN}║{Fore.YELLOW}                      .-----,        .---------------        {Fore.GREEN}║   ",
+f"{Fore.GREEN}║{Fore.YELLOW}                     /       \  __  /    ----------          {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                    / /       \(  )/    --------             {Fore.GREEN}║   ",
+f"{Fore.GREEN}║{Fore.YELLOW}                   //////     . \/ -   ------                {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                  //// / //   :    : -----                   {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                 // /   /     '`   ,-----                    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                // /  //    / //..\\\                        {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}               //          / //,..,\\\                       {Fore.GREEN}║ ",         
+f"{Fore.GREEN}║{Fore.YELLOW}                                                             {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                         ====UU====UU====                    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.YELLOW}                              //||\\                         {Fore.GREEN}║  ",     
+f"{Fore.GREEN}║{Fore.YELLOW}                            ////||\\\\                       {Fore.GREEN}║ ",     
+f"{Fore.GREEN}║{Fore.YELLOW}                               ''``                          {Fore.GREEN}║ ", 
+f"{Fore.GREEN}║{Fore.BLUE}   ╔═══╗{Fore.RED}               ╔══╗           ╔════╗    {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}   ████╝               ███║             █████╝   {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}   █║                  █║  █║                █║       {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}   █║                █╚══ █║                █║       {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}   █╚══╗           █ ████║               █║        {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}   ████╝           █╝    █╝                █╝       {Fore.GREEN}║ ",
+f"{Fore.GREEN}║{Fore.BLUE}                                                           {Fore.GREEN}║ ",
 f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════╝ ",
 
 ]
@@ -93,8 +93,8 @@ def countdown(t):
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.RED}{' ' * 2}😊╚═⟩ {Fore.CYAN}{prompt_message.ljust(64)}")
-    return input(f"{Fore.WHITE}{' ' * 2}💥╚═⟩ {Fore.CYAN}").strip()
+    print(f"{Fore.WHITE}{' ' * 2}😊╚═⟩ {Fore.CYAN}{prompt_message.ljust(64)}")
+    return input(f"{Fore.RED}{' ' * 2}💥╚═⟩ {Fore.CYAN}").strip()
 
 
 def get_target(url: str) -> dict:
