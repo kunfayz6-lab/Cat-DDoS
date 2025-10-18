@@ -88,13 +88,13 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.BLUE}╚{'═'  * 60}╝")
+            print(f"{Fore.BLUE}╚{'═'  * 40}╝")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.BLUE}║{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(64)}{Fore.BLUE}║")
-    print(f"{Fore.BLUE}╚{'═' * 60}╝")
+    print(f"{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(64)}")
+    print(f"{Fore.BLUE}╚{'═' * 40}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}═> ").strip()
 
 
