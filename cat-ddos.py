@@ -84,8 +84,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
-            print(f"\r{Fore.RED}[™] {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}[*]{Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}╚═⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}╚═⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -93,8 +93,8 @@ def countdown(t):
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.CYAN}{' ' * 2}😊 {prompt_message.ljust(64)}")
-    return input(f"{Fore.CYAN}{' ' * 2}💥 ").strip()
+    print(f"{Fore.CYAN}{' ' * 2}😊╚═⟩ {prompt_message.ljust(64)}")
+    return input(f"{Fore.CYAN}{' ' * 2}💥╚═⟩ ").strip()
 
 
 def get_target(url: str) -> dict:
@@ -182,8 +182,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}|")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}[™]  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.WHITE}[*]  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+                print(f"\r{Fore.RED}╚═⟩ {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+                print(f"\r{Fore.WHITE}╚═⟩ {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -282,7 +282,6 @@ if __name__ == "__main__":
     target_url = get_user_input("URL TARGET:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] Invalid URL, try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}|{'=' * 60}|")
         target_url = get_user_input("URL TARGET:")
 
     try:
