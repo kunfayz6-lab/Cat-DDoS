@@ -66,32 +66,35 @@ f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗      █ ████║       
 f"{Fore.GREEN}║{Fore.YELLOW}   ████╝      █╝    █╝        █╝  ",
 f"{Fore.GREEN}║{Fore.YELLOW}      ",
 f"{Fore.YELLOW}╚═════════════════════════════════════════════════════╝ ",
-    ] 
+
+]
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.2.0")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://kunkaffa@gmail.com")
-    print(f"{Fore.RED}╔{'═' * 55}╗")
+    print(f"{Fore.CYAN}╔{'═' * 60}╗")
 
-def countdown(t):0
+
+def countdown(t):
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}║")
-            print(f"\r{Fore.GREEN}C A T{Fore.BLUE}" +str(url)+ ")")
+            stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
+            print(f"\r{Fore.RED}[™] {Fore.YELLOE}C A T {Fore.WHITE}═> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}[*]{Fore.GREEN}C A T {Fore.RED}═> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
-            stdoⁿut.write(f"\r{Fore.RED}|[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack completed|\n")
-            print(f"{Fore.WHITE}║{'═' * 55}║")
+            stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
+            print(f"{Fore.CYAN}╚{'═'  * 74}╝")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.BLUE}║{' ' * 4}[*]{prompt_message.ljust(63)}║")
-    print(f"{Fore.RED}╚{'═' * 55}╝")
+    print(f"{Fore.GREEN}║{' ' * 4}[😊]{prompt_message.ljust(63)}║")
+    print(f"{Fore.GREEN}╚{'═' * 60}╝")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
 
 
@@ -177,11 +180,11 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
         async def progress():
             while time.time() < end_ts:
                 remaining = max(0, end_ts - time.time())
-                stdout.write(f"\r{Fore.BLUE}|[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}|")
+                stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}|")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.GREEN}[*] {Fore.MAGENTA} C A T {Fore.YELLOW}=> {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.YELLOW}[÷] {Fore.WHITE} C A T {Fore.GREEN}=> {Fore.YELLOW}" +str(url)+ ")")
+                print(f"\r{Fore.RED}[™] {Fore.YELLOE}C A T {Fore.WHITE}═> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+                print(f"\r{Fore.WHITE}[*]{Fore.GREEN}C A T {Fore.RED}═> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -215,29 +218,29 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     p99 = sorted(latencies)[int(0.99 * len(latencies)) - 1] if latencies else 0.0
     rps = summary['total'] / duration if duration > 0 else 0
     # Gaya log penyelesaian seperti file asli
-    stdout.write(f"\r{Fore.RED}|[÷] {Fore.YELLOW} C A T {Fore.CYAN} Attack has been completed|\n")
-    print(f"{Fore.CYAN}|{'═' * 45}|")
+    stdout.write(f"\r{Fore.RED}|[÷] {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
+    print(f"{Fore.CYAN}|{'═' * 50}|")
     log_attack_status("Test selesai. Ringkasan:")
-    print(f"{Fore.CYAN}|{'═' * 45}|")
+    print(f"{Fore.CYAN}|{'═' * 50}|")
     print(f"{Fore.GREEN}| Target     : {url.ljust(58)}|")
     print(f"{Fore.GREEN}| Duration   : {str(duration)+'s':<58}|")
     print(f"{Fore.GREEN}| Concurrency: {str(concurrency):<58}|")
     print(f"{Fore.GREEN}| Method     : {method:<58}|")
     print(f"{Fore.GREEN}| Rate limit : {('None' if not rate_limit else str(rate_limit)+' req/s'):<58}|")
-    print(f"{Fore.CYAN}|{'═' * 45}|")
+    print(f"{Fore.CYAN}|{'═' * 50}|")
     print(f"{Fore.WHITE}| Requests   : {str(summary['total']):<58}|")
     print(f"{Fore.WHITE}| 2xx/3xx    : {str(summary['ok']):<58}|")
     print(f"{Fore.WHITE}| RPS (avg)  : {rps:<58.2f}|")
     print(f"{Fore.WHITE}| Latency ms : avg={avg:.2f} p95={p95:.2f} p99={p99:.2f}{' ' * 20}|")
     if summary['by_status']:
-        print(f"{Fore.CYAN}|{'═' * 45}|")
+        print(f"{Fore.CYAN}|{'═' * 50}|")
         for code, cnt in summary['by_status'].most_common():
             print(f"{Fore.YELLOW}| HTTP {code:<4}: {str(cnt):<58}|")
     if summary['exceptions']:
-        print(f"{Fore.CYAN}|{'═' * 45}|")
+        print(f"{Fore.CYAN}|{'═' * 50}|")
         for name, cnt in summary['exceptions'].most_common():
             print(f"{Fore.RED}| {name:<10}: {str(cnt):<58}|")
-    print(f"{Fore.CYAN}|{'═' * 45}|")
+    print(f"{Fore.CYAN}|{'═' * 50}|")
 
 
 def confirm_ethical_use(target_host: str) -> bool:
@@ -280,7 +283,7 @@ if __name__ == "__main__":
     target_url = get_user_input("URL TARGET:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] Invalid URL, try again.{' ' * 37}|")
-        print(f"{Fore.CYAN}|{'═' * 74}|")
+        print(f"{Fore.CYAN}|{'=' * 74}|")
         target_url = get_user_input("URL TARGET:")
 
     try:
