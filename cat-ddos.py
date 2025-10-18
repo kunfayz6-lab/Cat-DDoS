@@ -71,9 +71,10 @@ f"{Fore.GREEN}╚═════════════════════
     for line in header_lines:
         print(line)
     # Versi dan URL
+    print(f"{Fore.BLUE}╔{'═' * 59}╗")
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
-    print(f"{Fore.BLUE}╔{'═' * 40}╗")
+    print(f"{Fore.BLUE}╚{'═'  * 60}╝")
 
 
 def countdown(t):
@@ -88,14 +89,12 @@ def countdown(t):
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
-            print(f"{Fore.BLUE}╚{'═'  * 40}╝")
             return
 
 
 def get_user_input(prompt_message):
-    print(f"{Fore.YELLOW}{' ' * 4}😊 {prompt_message.ljust(64)}")
-    print(f"{Fore.BLUE}╚{'═' * 40}╝")
-    return input(f"{Fore.YELLOW}{' ' * 4}═> ").strip()
+    print(f"{Fore.CYAN}{' ' * 2}😊 {prompt_message.ljust(64)}")
+    return input(f"{Fore.CYAN}{' ' * 2}💥 ").strip()
 
 
 def get_target(url: str) -> dict:
