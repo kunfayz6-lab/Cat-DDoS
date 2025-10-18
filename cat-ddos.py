@@ -61,7 +61,8 @@ f"{Fore.GREEN}║{Fore.YELLOW}   █║           █╚══ █║        █
 f"{Fore.GREEN}║{Fore.YELLOW}   █╚══╗      █ ████║       █║     ",
 f"{Fore.GREEN}║{Fore.YELLOW}   ████╝      █╝    █╝        █╝  ",
 f"{Fore.GREEN}║{Fore.YELLOW}      ",
-    ]  
+f"{Fore.YELLOW}╚═════════════════════════════════════════════════════╝ ",
+    ] 
     for line in header_lines:
         print(line)
     # Versi dan URL
