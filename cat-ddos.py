@@ -43,7 +43,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 def display_header():
     header_lines = [
-f"{Fore.GREEN}╔════════════════════════════════════════════════════════════╗",
+f"{Fore.GREEN}╔═════════════════════════════════════════════════════════════════════════╗",
 f"{Fore.GREEN}║{Fore.YELLOW}                                                              {Fore.GREEN}║   ",
 f"{Fore.GREEN}║{Fore.YELLOW}                      .-----,        .---------------        {Fore.GREEN}║   ",
 f"{Fore.GREEN}║{Fore.YELLOW}                     /       \  __  /    ----------          {Fore.GREEN}║ ",
@@ -68,7 +68,7 @@ f"{Fore.GREEN}║{Fore.BLUE}                             ╚═══╝╔═�
 f"{Fore.GREEN}║{Fore.BLUE}                                  ║   ╔╝  ╔╗  ╚╝╚╝     {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                                  ╚═══╝ ╚╝                {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}                                                                  {Fore.GREEN}║ ", 
-f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════╝ ",
+f"{Fore.GREEN}╚════════════════════════════════════════════════════════════════════════╝ ",
 
 ]
     for line in header_lines:
