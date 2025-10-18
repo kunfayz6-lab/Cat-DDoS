@@ -84,8 +84,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}|")
-            print(f"\r{Fore.RED}█║⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}█║⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}[]⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}[]⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}[÷]{Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -182,8 +182,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}| [*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}|")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}█║⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.WHITE}█║⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+                print(f"\r{Fore.RED}[]⟩  {Fore.YELLOW}C A T {Fore.WHITE}—> {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+                print(f"\r{Fore.WHITE}[]⟩  {Fore.GREEN}C A T {Fore.RED}—> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -245,8 +245,8 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
 def confirm_ethical_use(target_host: str) -> bool:
     print(f"{Fore.GREEN}••>  PERINGATAN: Gunakan hanya pada server milik sendiri dengan izin.")
     print(f"{Fore.GREEN} Target: {target_host.ljust(61)}")
-    print(f"{Fore.GREEN} Ketik '12345' untuk melanjutkan: {' ' * 35}")
-    ans = input("    > ").strip().upper()
+    print(f"{Fore.GREEN}••> Ketik '12345' untuk melanjutkan: {' ' * 35}")
+    ans = input("    ••> ").strip().upper()
     return ans == '12345'
 
 
