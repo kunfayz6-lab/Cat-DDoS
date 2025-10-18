@@ -59,12 +59,13 @@ f"{Fore.GREEN}║{Fore.YELLOW}                              //||\\              
 f"{Fore.GREEN}║{Fore.YELLOW}                            ////||\\\\                       {Fore.GREEN}║ ",     
 f"{Fore.GREEN}║{Fore.YELLOW}                               ''``                          {Fore.GREEN}║ ", 
 
-         b ╔═════╗
-         ╔╝╔═══╗║ 
-  ╝═══╝╔═══╝╔╝
-               ╔╝
-    ══════╝
-        
+                  ╔════╗
+                ╔╝╔══╗║ 
+   ╔═╗     ╔═╝╔═╝╔╝
+ ╔╝  ╚═══╝       ╔╝
+    ╔╗      ╔════╝
+  ╔╝ ╚═══╝        
+
 f"{Fore.GREEN}║{Fore.BLUE}   ╔═══╗{Fore.RED}               ╔══╗{Fore.MAGENTA}       ╔════╗    {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}   ████╝{Fore.RED}               ███║{Fore.MAGENTA}          █████╝   {Fore.GREEN}║ ",
 f"{Fore.GREEN}║{Fore.BLUE}   █║{Fore.RED}                 █║  █║ {Fore.MAGENTA}        █║       {Fore.GREEN}║ ",
