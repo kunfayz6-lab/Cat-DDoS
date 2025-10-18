@@ -246,7 +246,7 @@ def confirm_ethical_use(target_host: str) -> bool:
     print(f"{Fore.GREEN}••>  PERINGATAN: Gunakan hanya pada server milik sendiri dengan izin.")
     print(f"{Fore.GREEN} Target: {target_host.ljust(61)}")
     print(f"{Fore.GREEN}••> Ketik '12345' untuk melanjutkan: {' ' * 35}")
-    ans = input("    ••> ").strip().upper()
+    ans = input("  ••> ").strip().upper()
     return ans == '12345'
 
 
