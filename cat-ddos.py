@@ -57,15 +57,15 @@ f"{Fore.BLUE}║{Fore.GREEN}                           ====UU====UU====         
 f"{Fore.BLUE}║{Fore.YELLOW}{Fore.WHITE}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}{Fore.WHITE}          ╔═════════╗           {Fore.BLUE}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.GREEN}             ////||\\\\\{Fore.YELLOW}         ██████████{Fore.WHITE}║           {Fore.BLUE}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║             {Fore.GREEN}          ''``{Fore.YELLOW}                ██{Fore.WHITE}║               {Fore.BLUE}║ ", 
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║                    ╔═══════╗              ██{Fore.WHITE}║               {Fore.BLUE}║ ",         
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║                    ╔═══════╗{Fore.YELLOW}              ██{Fore.WHITE}║               {Fore.BLUE}║ ",         
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                    ████████{Fore.WHITE}╚╗{Fore.YELLOW}             ██{Fore.WHITE}║               {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                   ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}            ██{Fore.WHITE}║               {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                   ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}            ██{Fore.WHITE}║               {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}╚═══════╗{Fore.YELLOW}          ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}            ██{Fore.WHITE}║              {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}╚═══════╗{Fore.YELLOW}           ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║              {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.YELLOW}           ██{Fore.WHITE}╚══════{Fore.YELLOW}██{Fore.WHITE}║{Fore.YELLOW}            ██{Fore.WHITE}╝             {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}                             ███████████║                             {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}                             ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║                             {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                             ██{Fore.WHITE}╝{Fore.YELLOW}     ██{Fore.WHITE}╝                             {Fore.BLUE}║ ",                                                                         
+f"{Fore.BLUE}║{Fore.YELLOW}                             ██{Fore.WHITE}╝{Fore.YELLOW}      ██{Fore.WHITE}╝                             {Fore.BLUE}║ ",                                                                         
 f"{Fore.BLUE}╚══════════════════════════════════════════════════════════════════════╝ ",
     ]
     for line in header_lines:
