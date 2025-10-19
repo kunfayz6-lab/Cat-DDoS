@@ -71,10 +71,10 @@ f"{Fore.BLUE}╚═════════════════════�
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.BLUE}╔{'═' * 70}╗")
-    print(f"{Fore.WHITE}{Style.BRIGHT}║  v.1.0{' ' * 63}║")
-    print(f"{Fore.CYAN}{Style.BRIGHT}║  Author By: KunFayz{' ' * 51}║")
-    print(f"{Fore.BLUE}╚{'═'  * 70}╝")
+    print(f"{Fore.YELLOW}╔{'═' * 70}╗")
+    print(f"{Fore.YELLOW}{Style.BRIGHT}║{Fore.WHITE}  v.2.0{' ' * 63}{Fore.YELLOW}║")
+    print(f"{Fore.YELLOW}{Style.BRIGHT}║{Fore.CYAN}  Author By: KunFayz{' ' * 50}{Fore.YELLOW}║")
+    print(f"{Fore.YELLOW}╚{'═'  * 70}╝")
 
 
 def countdown(t):
