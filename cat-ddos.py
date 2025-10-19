@@ -54,9 +54,9 @@ f"{Fore.BLUE}║{Fore.GREEN}                   // /  //    / //..\\\            
 f"{Fore.BLUE}║{Fore.GREEN}                  //          / //,..,\\\                                  {Fore.GREEN}║ ",         
 f"{Fore.BLUE}║{Fore.GREEN}                                                                        {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.GREEN}                           ====UU====UU====                               {Fore.GREEN}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}         ╔═════════╗ {Fore.GREEN}║ ",     
-f"{Fore.BLUE}║{Fore.YELLOW}       ██████████╝{Fore.GREEN}              ////||\\\\{Fore.YELLOW}         ██████████║{Fore.GREEN}║ ",     
-f"{Fore.BLUE}║{Fore.YELLOW}       ██║             {Fore.GREEN}              ''``{Fore.YELLOW}             ██║             {Fore.GREEN}║ ", 
+f"{Fore.BLUE}║{Fore.YELLOW}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}         ╔═════════╗    {Fore.GREEN}║ ",     
+f"{Fore.BLUE}║{Fore.YELLOW}       ██████████╝{Fore.GREEN}             ////||\\\\{Fore.YELLOW}         ██████████║   {Fore.GREEN}║ ",     
+f"{Fore.BLUE}║{Fore.YELLOW}       ██║             {Fore.GREEN}            ''``{Fore.YELLOW}             ██║                  {Fore.GREEN}║ ", 
 f"{Fore.BLUE}║{Fore.YELLOW}       ██║                    ╔═══════╗                ██║               {Fore.GREEN}║ ",         
 f"{Fore.BLUE}║{Fore.YELLOW}       ██║                    ████████╚╗              ██║                 {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██║                   ██║      ██║              ██║                   {Fore.GREEN}║ ",
@@ -64,8 +64,8 @@ f"{Fore.BLUE}║{Fore.YELLOW}       ██║                   ██║      �
 f"{Fore.BLUE}║{Fore.YELLOW}       ██╚═══════╗           ██║      ██║              ██║     {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██████████╝           ██╚══════██║             ██╝      {Fore.GREEN}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}                                ███████████║                             {Fore.GREEN}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                                ██║      ██║                             {Fore.GREEN}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                                ██╝      ██╝                             {Fore.GREEN}║ ",                                                                         
+f"{Fore.BLUE}║{Fore.YELLOW}                              ██║      ██║                             {Fore.GREEN}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                              ██╝      ██╝                             {Fore.GREEN}║ ",                                                                         
 f"{Fore.BLUE}╚══════════════════════════════════════════════════════════════════════╝ ",
     ]
     for line in header_lines:
