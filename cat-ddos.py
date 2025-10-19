@@ -73,7 +73,7 @@ f"{Fore.BLUE}╚═════════════════════�
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
+    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}Author By: KunFayz")
     print(f"{Fore.BLUE}╚{'═'  * 70}╝")
 
 
