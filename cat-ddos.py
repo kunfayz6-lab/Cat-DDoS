@@ -72,8 +72,8 @@ f"{Fore.BLUE}╚═════════════════════�
         print(line)
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}Author By: KunFayz")
+    print(f"{Fore.WHITE}{Style.BRIGHT}║  v.1.0{' ' * 63}║")
+    print(f"{Fore.CYAN}{Style.BRIGHT}║  Author By: KunFayz{' ' * 51}║")
     print(f"{Fore.BLUE}╚{'═'  * 70}╝")
 
 
