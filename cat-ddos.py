@@ -57,24 +57,24 @@ f"{Fore.BLUE}║{Fore.GREEN}                           ====UU====UU====         
 f"{Fore.BLUE}║{Fore.YELLOW}{Fore.WHITE}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}{Fore.WHITE}              ╔═════════╗        {Fore.BLUE}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.GREEN}             ////||\\\\\{Fore.YELLOW}            ██████████{Fore.WHITE}║        {Fore.BLUE}║ ",     
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║             {Fore.GREEN}          ''``{Fore.YELLOW}                   ██{Fore.WHITE}║            {Fore.BLUE}║ ", 
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║                    ╔═══════╗{Fore.YELLOW}                 ██{Fore.WHITE}║            {Fore.BLUE}║ ",         
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                    ████████{Fore.WHITE}╚╗{Fore.YELLOW}                ██{Fore.WHITE}║            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                   ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}               ██{Fore.WHITE}║            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                   ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}               ██{Fore.WHITE}║            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}╚═══════╗{Fore.YELLOW}           ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}               ██{Fore.WHITE}║            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.YELLOW}           ██{Fore.WHITE}╚══════{Fore.YELLOW}██{Fore.WHITE}║{Fore.YELLOW}               ██{Fore.WHITE}╝            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                             ███████████║                              {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                             ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║                              {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                             ██{Fore.WHITE}╝{Fore.YELLOW}      ██{Fore.WHITE}╝                              {Fore.BLUE}║ ",                                                                         
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║                      ╔═══════╗{Fore.YELLOW}               ██{Fore.WHITE}║            {Fore.BLUE}║ ",         
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                      ████████{Fore.WHITE}╚╗{Fore.YELLOW}              ██{Fore.WHITE}║            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                     ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                     ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}╚═══════╗{Fore.YELLOW}             ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.YELLOW}             ██{Fore.WHITE}╚══════{Fore.YELLOW}██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}╝            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                               ███████████║                              {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║                              {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}╝{Fore.YELLOW}      ██{Fore.WHITE}╝                              {Fore.BLUE}║ ",                                                                         
 f"{Fore.BLUE}╚═══════════════════════════════════════════════════════════════════════╝ ",
     ]
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.BLUE}╔{'═' * 65}╗")
+    print(f"{Fore.BLUE}╔{'═' * 69}╗")
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
-    print(f"{Fore.BLUE}╚{'═'  * 65}╝")
+    print(f"{Fore.BLUE}╚{'═'  * 69}╝")
 
 
 def countdown(t):
