@@ -63,18 +63,18 @@ f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}          
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║{Fore.YELLOW}                     ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║            {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}╚═══════╗{Fore.YELLOW}             ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}║            {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.YELLOW}             ██{Fore.WHITE}╚══════{Fore.YELLOW}██{Fore.WHITE}║{Fore.YELLOW}             ██{Fore.WHITE}╝            {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                               ███████████║                              {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║                              {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}╝{Fore.YELLOW}      ██{Fore.WHITE}╝                              {Fore.BLUE}║ ",                                                                         
+f"{Fore.BLUE}║{Fore.YELLOW}                               ███████████║                            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}║{Fore.YELLOW}      ██{Fore.WHITE}║                            {Fore.BLUE}║ ",
+f"{Fore.BLUE}║{Fore.YELLOW}                               ██{Fore.WHITE}╝{Fore.YELLOW}      ██{Fore.WHITE}╝                            {Fore.BLUE}║ ",                                                                         
 f"{Fore.BLUE}╚═══════════════════════════════════════════════════════════════════════╝ ",
     ]
     for line in header_lines:
         print(line)
     # Versi dan URL
-    print(f"{Fore.BLUE}╔{'═' * 69}╗")
+    print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 45}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 10}https://kunfayz/github.com")
-    print(f"{Fore.BLUE}╚{'═'  * 69}╝")
+    print(f"{Fore.BLUE}╚{'═'  * 70}╝")
 
 
 def countdown(t):
@@ -218,7 +218,7 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
     rps = summary['total'] / duration if duration > 0 else 0
     # Gaya log penyelesaian seperti file asli
     stdout.write(f"\r{Fore.GREEN}└> {Fore.YELLOW}C A T {Fore.RED} •> {Fore.CYAN} Attack has been completed\n")
-    print(f"{Fore.BLUE}╚{'═' * 40}╝")
+    print(f"{Fore.BLUE}╚{'═' * 45}╝")
     log_attack_status("Test Finish. Summary:")
     print(f"{Fore.YELLOW}└> Target     : {url.ljust(58)}")
     print(f"{Fore.YELLOW}└> Duration   : {str(duration)+'s':<58}")
