@@ -289,18 +289,18 @@ if __name__ == "__main__":
     display_header()
 
     while attemps < 100:
-       print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-       username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
-       print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-       password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTYELLOW_EX}")
+        print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
+        username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
+        print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
+        password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTYELLOW_EX}")
 
-    if username == 'janda' and password == 'sebelah':
-        print(f"{Fore.LIGHTWHITE_EX} FUCKING ZIONIST...!!")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue        
+        if username == 'janda' and password == 'sebelah':
+            print(f"{Fore.LIGHTWHITE_EX} FUCKING ZIONIST...!!")
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue        
 
     target_url = get_user_input("URL TARGET:   ")
     while not validators.url(target_url):
