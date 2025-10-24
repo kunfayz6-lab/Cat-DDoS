@@ -42,8 +42,8 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 os.system("clear")
-os.system("https://github.com/Kodekeras24")
-print("\033[37mWelcome to Zona Blackphanter\033[0m")
+os.system(f"{Fore.YELLOW}https://github.com/kunfayz6-lab/")
+print(f"{Fore.LIGHTGREEN}Welcome")
 time.sleep(5)
 print("Loading.......")
 
