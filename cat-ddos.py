@@ -79,18 +79,7 @@ f"{Fore.BLACK}{Fore.BLUE}╚═════════════════�
     ]
     for line in header_lines:
         print(line)
-while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
-    
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.BLUE}{Style.BRIGHT}║{Fore.WHITE}  v.2.0{' ' * 63}{Fore.BLUE}║")
@@ -261,7 +250,18 @@ def print_summary(url: str, duration: int, concurrency: int, method: str, rate_l
             print(f"{Fore.GREEN} {name:<10}: {str(cnt):<58}")
     print(f"{Fore.BLUE}{'••' * 15}")
 
+while attemps < 100:
+    username = input("\033[32mEnter your username: \033[0m")
+    password = input("\033[31mEnter your password: \033[0m")
 
+    if username == 'bp4' and password == 'bp4':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
+        
 def confirm_ethical_use(target_host: str) -> bool:
     print(f"{Fore.GREEN}└> WARNING..!! do not attack government websites.")
     print(f"{Fore.GREEN}└> Target: {target_host.ljust(61)}")
