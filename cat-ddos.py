@@ -79,7 +79,6 @@ f"{Fore.BLACK}{Fore.BLUE}╚═════════════════�
 
     if username == 'asal' and password == 'sembarang':
         print(f"{Fore.LIGHTGREEN} FUCKING ZI0NIS...!!")
-        break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
