@@ -288,11 +288,6 @@ def launch_attack(target_url, duration, concurrency=10, method='GET', rate_limit
 if __name__ == "__main__":
     display_header()
 
-
-    target_url = get_user_input("URL TARGET:   ")
-    while not validators.url(target_url):
-        print(f"{Fore.RED}    [ERROR] Invalid URL, try again.{' ' * 37}")
-
     while attemps < 100:
        print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
        username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
@@ -306,7 +301,10 @@ if __name__ == "__main__":
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue        
-        
+
+    target_url = get_user_input("URL TARGET:   ")
+    while not validators.url(target_url):
+        print(f"{Fore.RED}    [ERROR] Invalid URL, try again.{' ' * 37}")
         target_url = get_user_input("URL TARGET:")
 
     try:
