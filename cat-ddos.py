@@ -43,7 +43,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 os.system("clear")
 os.system(f"{Fore.YELLOW}https://github.com/kunfayz6-lab/")
-print(f"{Fore.LIGHTGREEN}Welcome")
+print(f"{Fore.LIGHTGREEN}for an independent Palestine..!!")
 time.sleep(5)
 print("Loading.......")
 
