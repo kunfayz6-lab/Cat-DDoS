@@ -77,8 +77,8 @@ f"{Fore.BLUE}╚═════════════════════�
     username = input(f"{Fore.LIGHTCYAN_EX}•> Username: {Fore.LIGHTBLUE_EX}")
     password = input(f"{Fore.LIGHTCYAN_EX}•> Password: {Fore.LIGHTBLUE_EX}")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+    if username == 'asal' and password == 'sembarang':
+        print(f"{Fore.LIGHTGREEN} FUCKING ZI0NIS...!!")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
