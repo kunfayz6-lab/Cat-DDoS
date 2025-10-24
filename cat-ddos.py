@@ -102,7 +102,7 @@ def countdown(t):
             return
 
 
-def get_user_input(prompt_message):
+
 while attemps < 100:
     print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
     username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
@@ -117,6 +117,7 @@ while attemps < 100:
         attemps += 1
         continue
 
+def get_user_input(prompt_message):
     print(f"{Fore.WHITE}{' ' * 2}😊 └> {Fore.CYAN}{prompt_message.ljust(64)}")
     return input(f"{Fore.RED}{' ' * 2}💥 └>  {Fore.WHITE}").strip()
 
