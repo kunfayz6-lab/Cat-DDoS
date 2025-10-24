@@ -42,8 +42,8 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 os.system("clear")
-os.system("https://github.com/kunfayz6-lab/")
-print(f"{Fore.LIGHTGREEN}for an independent Palestine..!!")
+os.system(f"{Fore.LIGHTGREEN_EX}https://github.com/kunfayz6-lab/")
+print(f"{Fore.LIGHTGREEN_EX}for an independent Palestine..!!")
 time.sleep(5)
 print("Loading.......")
 
