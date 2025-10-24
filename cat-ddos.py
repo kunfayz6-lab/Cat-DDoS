@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3.11
-
+import os
 import time
 import datetime
 import asyncio
@@ -40,7 +40,9 @@ def log_attack_status(message, level='info', print_to_terminal=True):
         if print_to_terminal:
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
-
+attemps = 0
+os.system("clear")
+print("")
 def display_header():
     header_lines = [
 f"{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
