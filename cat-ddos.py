@@ -40,9 +40,12 @@ def log_attack_status(message, level='info', print_to_terminal=True):
         if print_to_terminal:
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
-attemps = 0
 os.system("clear")
-print("")
+os.system("https://github.com/Kodekeras24")
+print("\033[37mWelcome to Zona Blackphanter\033[0m")
+time.sleep(5)
+print("Loading.......")
+
 def display_header():
     header_lines = [
 f"{Fore.BLACK}{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
@@ -72,17 +75,18 @@ f"{Fore.BLACK}{Fore.BLUE}╚═════════════════�
     ]
     for line in header_lines:
         print(line)
+while attemps < 100:
+    username = input("\033[32mEnter your username: \033[0m")
+    password = input("\033[31mEnter your password: \033[0m")
 
-    while attemps < 100:
-        username = input(f"{Fore.LIGHTCYAN_EX}•> Username: {Fore.LIGHTBLUE_EX}")
-        password = input(f"{Fore.LIGHTCYAN_EX}•> Password: {Fore.LIGHTBLUE_EX}")
-
-    if username == 'asal' and password == 'sembarang':
-        print(f"{Fore.LIGHTGREEN} FUCKING ZI0NIS...!!")
+    if username == 'bp4' and password == 'bp4':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
-        
+        continue
+    
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.BLUE}{Style.BRIGHT}║{Fore.WHITE}  v.2.0{' ' * 63}{Fore.BLUE}║")
