@@ -72,6 +72,18 @@ f"{Fore.BLUE}╚═════════════════════�
     ]
     for line in header_lines:
         print(line)
+
+    while attemps < 100:
+    username = input(f"{Fore.LIGHTCYAN_EX}•> Username: {Fore.LIGHTBLUE_EX}")
+    password = input(f"{Fore.LIGHTCYAN_EX}•> Password: {Fore.LIGHTBLUE_EX}")
+
+    if username == 'bp4' and password == 'bp4':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.BLUE}{Style.BRIGHT}║{Fore.WHITE}  v.2.0{' ' * 63}{Fore.BLUE}║")
