@@ -45,7 +45,7 @@ os.system("clear")
 print("")
 def display_header():
     header_lines = [
-f"{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
+f"{Fore.BLACK} {Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
 f"{Fore.BLUE}║{Fore.GREEN}                         .-----,        .---------------               {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.GREEN}                        /       \  __  /    ----------                 {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.GREEN}                       / /       \(  )/    --------                    {Fore.BLUE}║ ",
@@ -74,8 +74,8 @@ f"{Fore.BLUE}╚═════════════════════�
         print(line)
 
     while attemps < 100:
-    username = input(f"{Fore.LIGHTCYAN_EX}•> Username: {Fore.LIGHTBLUE_EX}")
-    password = input(f"{Fore.LIGHTCYAN_EX}•> Password: {Fore.LIGHTBLUE_EX}")
+        username = input(f"{Fore.LIGHTCYAN_EX}•> Username: {Fore.LIGHTBLUE_EX}")
+        password = input(f"{Fore.LIGHTCYAN_EX}•> Password: {Fore.LIGHTBLUE_EX}")
 
     if username == 'asal' and password == 'sembarang':
         print(f"{Fore.LIGHTGREEN} FUCKING ZI0NIS...!!")
