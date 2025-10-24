@@ -55,10 +55,10 @@ def display_header():
 f"{Fore.BLACK}{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                         .-----,        .---------------               {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                        /       \  __  /    ----------                 {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                      / /       \(  )/    --------                    {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                     //////     . \/ -   ------                       {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                    //// / //   :    : -----                          {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                 // /   /     '`   ,-----                           {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                       / /       \(  )/    --------                    {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                      //////     . \/ -   ------                       {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                     //// / //   :    : -----                          {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                    // /   /     '`   ,-----                           {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                   // /  //    / //..\\\                                {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                  //          / //,..,\\\                               {Fore.BLUE}║ ",         
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                                                                      {Fore.BLUE}║ ",
@@ -289,12 +289,13 @@ if __name__ == "__main__":
     display_header()
 
 while attemps < 100:
-    print(f"{Fore.LIGHTCYAN_EX}
-    username = input(f"{Fore.LIGHTCYAN_EX}Username please: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
+    print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
+    username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTBLUE_EX}")
+    print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
+    password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTBLUE_EX}")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+    if username == 'janda' and password == 'sebelah':
+        print(f"{Fore.LIGHTYELLOW_EX} FUCKING ZIONIST...!!")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
