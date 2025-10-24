@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}└>  {Fore.YELLOW}C A T {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}└>  {Fore.GREEN}C A T {Fore.RED}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}[]  {Fore.YELLOW}C A T {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}[]  {Fore.GREEN}C A T {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -192,8 +192,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}└> {Fore.BLUE}C A T {Fore.YELLOW} •>  {Fore.WHITE}Request {Fore.GREEN}" +str(url)+ "     ║")
-                print(f"\r{Fore.WHITE}└> {Fore.GREEN}C A T {Fore.RED} •>  {Fore.CYAN} Attack {Fore.YELLOW}" +str(url)+ "     ║")
+                print(f"\r{Fore.RED}[] {Fore.BLUE}C A T {Fore.YELLOW} •>  {Fore.WHITE}Request {Fore.GREEN}" +str(url)+ "     ║")
+                print(f"\r{Fore.WHITE}[] {Fore.GREEN}C A T {Fore.MAGENTA} •>  {Fore.CYAN} Attack {Fore.YELLOW}" +str(url)+ "     ║")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -289,10 +289,10 @@ if __name__ == "__main__":
     display_header()
 
     while attemps < 100:
-        print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-        username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
-        print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-        password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTYELLOW_EX}")
+        print(f"{Fore.LIGHTCYAN_EX}┌[Cyber Attack Team")
+        username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.GREEN}")
+        print(f"{Fore.LIGHTCYAN_EX}┌[Cyber Attack Team")
+        password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.GREEN}")
 
         if username == 'janda' and password == 'sebelah':
             print(f"{Fore.LIGHTWHITE_EX} FUCKING ZIONIST...!!")
