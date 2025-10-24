@@ -82,7 +82,7 @@ f"{Fore.BLACK}{Fore.BLUE}╚═════════════════�
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
-        continue
+        
     # Versi dan URL
     print(f"{Fore.BLUE}╔{'═' * 70}╗")
     print(f"{Fore.BLUE}{Style.BRIGHT}║{Fore.WHITE}  v.2.0{' ' * 63}{Fore.BLUE}║")
