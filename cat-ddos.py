@@ -47,6 +47,9 @@ print("\033[37mWelcome to Zona Blackphanter\033[0m")
 time.sleep(5)
 print("Loading.......")
 
+attemps = 0
+os.system("clear")
+print("")
 def display_header():
     header_lines = [
 f"{Fore.BLACK}{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
