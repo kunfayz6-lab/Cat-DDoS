@@ -289,7 +289,8 @@ if __name__ == "__main__":
     display_header()
 
 while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
+    print(f"{Fore.LIGHTCYAN_EX}
+    username = input(f"{Fore.LIGHTCYAN_EX}Username please: \033[0m")
     password = input("\033[31mEnter your password: \033[0m")
 
     if username == 'bp4' and password == 'bp4':
