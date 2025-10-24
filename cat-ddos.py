@@ -62,7 +62,7 @@ f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                    // /   /     '`   ,-
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                   // /  //    / //..\\\                                {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                  //          / //,..,\\\                               {Fore.BLUE}║ ",         
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                                                                      {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                           ====UU====UU====                            {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                            ====UU====UU====                            {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}{Fore.WHITE}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}{Fore.WHITE}              ╔═════════╗        {Fore.BLUE}║ ",     
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.GREEN}             ////||\\\\\{Fore.YELLOW}            ██████████{Fore.WHITE}║        {Fore.BLUE}║ ",     
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║             {Fore.GREEN}          ''``{Fore.YELLOW}                   ██{Fore.WHITE}║            {Fore.BLUE}║ ", 
@@ -290,12 +290,12 @@ if __name__ == "__main__":
 
 while attemps < 100:
     print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-    username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTBLUE_EX}")
+    username = input(f"{Fore.LIGHTCYAN_EX}└> Username please: {Fore.LIGHTYELLOW_EX}")
     print(f"{Fore.LIGHTCYAN_EX}┌[KunFayz•••••")
-    password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTBLUE_EX}")
+    password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.LIGHTYELLOW_EX}")
 
     if username == 'janda' and password == 'sebelah':
-        print(f"{Fore.LIGHTYELLOW_EX} FUCKING ZIONIST...!!")
+        print(f"{Fore.LIGHTWHITE_EX} FUCKING ZIONIST...!!")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
