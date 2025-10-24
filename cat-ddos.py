@@ -45,13 +45,13 @@ os.system("clear")
 print("")
 def display_header():
     header_lines = [
-f"{Fore.BLACK} {Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
-f"{Fore.BLUE}║{Fore.GREEN}                         .-----,        .---------------               {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.GREEN}                        /       \  __  /    ----------                 {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.GREEN}                       / /       \(  )/    --------                    {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.GREEN}                      //////     . \/ -   ------                       {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.GREEN}                     //// / //   :    : -----                          {Fore.BLUE}║ ",
-f"{Fore.BLUE}║{Fore.GREEN}                    // /   /     '`   ,-----                           {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}╔═══════════════════════════════════════════════════════════════════════╗",                                                                        
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                         .-----,        .---------------               {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                        /       \  __  /    ----------                 {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║                       / /       \(  )/    --------                    {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║                     //////     . \/ -   ------                       {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║                    //// / //   :    : -----                          {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║                  // /   /     '`   ,-----                           {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.GREEN}                   // /  //    / //..\\\                                {Fore.BLUE}║ ",
 f"{Fore.BLUE}║{Fore.GREEN}                  //          / //,..,\\\                               {Fore.BLUE}║ ",         
 f"{Fore.BLUE}║{Fore.GREEN}                                                                       {Fore.BLUE}║ ",
