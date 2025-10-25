@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request  \033[104m" +str(url)+ "\033[0m")
+            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Attack°  \033[106m" +str(url)+ "\033[0m")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -192,8 +192,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+                print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request  \033[104m" +str(url)+ "\033[0m")
+                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Attack°  \033[106m" +str(url)+ "\033[0m")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -290,9 +290,9 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"\033[103m┌[Cyber Attack Team")
-        username = input(f"\033[103m└> Username please: \033[7m")
+        username = input(f"\033[103m└> Username please\033[0m"): \033[7m")
         print(f"\033[106m┌[Cyber Attack Team")
-        password = input(f"\033[106m└> Your password: \033[7m")
+        password = input(f"\033[106m└> Your password\033[0m"): \033[7m")
 
         if username == 'tanya' and password == 'janda sebelah':
             
