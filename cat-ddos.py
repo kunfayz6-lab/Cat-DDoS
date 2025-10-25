@@ -290,9 +290,9 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"\033[103m┌[Cyber Attack Team")
-        username = input(f"\033[103m└> Username please\033[0m"): \033[7m")
+        username = input("└> Username please\033[0m: \033[7m")
         print(f"\033[106m┌[Cyber Attack Team")
-        password = input(f"\033[106m└> Your password\033[0m"): \033[7m")
+        password = input("└> Your password\033[0m: \033[7m")
 
         if username == 'tanya' and password == 'janda sebelah':
             
