@@ -43,7 +43,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 os.system("clear")
 os.system(f"\033[103mhttps://github.com/kunfayz6-lab/\033[0m")
-print(f"{Fore.LIGHTGREEN_EX}.       FOR an INDEPENDENT PALESTINE..!!")
+print(f"{Fore.LIGHTGREEN_EX}.  FOR an INDEPENDENT PALESTINE..!!")
 time.sleep(5)
 print("Loading.......")
 
@@ -95,7 +95,7 @@ def countdown(t):
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
             print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request-Attack {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
-            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Request-Attack {Fore.YELLOW}Sent  \033[7m" +str(url)+ "\033[0m")
+            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Request-Attack {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -193,7 +193,7 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
                 print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request-Attack {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
-                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Request-Attack {Fore.YELLOW}Sent  \033[7m" +str(url)+ "\033[0m")
+                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T {Fore.GREEN}Request-Attack {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -290,9 +290,9 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"\033[103m┌[Cyber Attack Team")
-        username = input("\033[103m└> Username please: \033[0m")
+        username = input("\033[103m└> Username please:   \033[33m")
         print(f"\033[7m┌[Cyber Attack Team")
-        password = input("\033[7m└> Your password: \033[0m")
+        password = input("\033[7m└> Your password: \033[33m")
 
         if username == 'tanya' and password == 'janda sebelah':
             
