@@ -42,7 +42,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 os.system("clear")
-os.system(f"{Fore.LIGHTGREEN_EX}https://github.com/kunfayz6-lab/")
+os.system(f"\033[103mhttps://github.com/kunfayz6-lab/\0333[0m")
 print(f"{Fore.LIGHTGREEN_EX}for an independent Palestine..!!")
 time.sleep(5)
 print("Loading.......")
@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}[]  {Fore.YELLOW}C A T {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}[]  {Fore.GREEN}C A T {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"\r{Fore.RED}[]  \033[103mC\033[0m") \033[106mA\033[0m") \033[103mT\033[0m") {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"\r{Fore.WHITE}[]  \033[104mC\033[0m") A T {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
