@@ -289,8 +289,8 @@ if __name__ == "__main__":
     display_header()
 
     while attemps < 100:
-        print(f"\033[7m┌[Cyber Attack Team")
-        username = input(f"└> Username please: {Fore.WHITE}")
+        print(f"\033[103m┌[Cyber Attack Team")
+        username = input(f"└> Username please: \033[7m")
         print(f"{Fore.YELLOW}┌[Cyber Attack Team")
         password = input(f"{Fore.LIGHTCYAN_EX}└> Your password: {Fore.WHITE}")
 
