@@ -42,7 +42,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
             print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
 
 os.system("clear")
-os.system(f"\033[103mhttps://github.com/kunfayz6-lab/\0333[0m")
+os.system(f"\033[103mhttps://github.com/kunfayz6-lab/\033[0m")
 print(f"{Fore.LIGHTGREEN_EX}for an independent Palestine..!!")
 time.sleep(5)
 print("Loading.......")
@@ -61,8 +61,8 @@ f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                     //// / //   :    : 
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                    // /   /     '`   ,-----                           {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                   // /  //    / //..\\\                                {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                  //          / //,..,\\\                               {Fore.BLUE}║ ",         
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                                                                      {Fore.BLUE}║ ",
-f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                            ====UU====UU====                            {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                                                                       {Fore.BLUE}║ ",
+f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}                            ====UU====UU====                           {Fore.BLUE}║ ",
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.GREEN}{Fore.WHITE}       ╔═════════╗{Fore.GREEN}               //||\\{Fore.YELLOW}{Fore.WHITE}              ╔═════════╗        {Fore.BLUE}║ ",     
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.YELLOW}       ██████████{Fore.WHITE}╝{Fore.GREEN}             ////||\\\\\{Fore.YELLOW}            ██████████{Fore.WHITE}║        {Fore.BLUE}║ ",     
 f"{Fore.BLACK}{Fore.BLUE}║{Fore.YELLOW}       ██{Fore.WHITE}║             {Fore.GREEN}          ''``{Fore.YELLOW}                   ██{Fore.WHITE}║            {Fore.BLUE}║ ", 
@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"{Fore.RED}[]  \033[103mC A T\033[0m {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"{Fore.WHITE}[]  \033[7mC A T\033[0m {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"{Fore.RED}[]  \033[103mC A T\033[0m {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")\033[0m")
+            print(f"{Fore.WHITE}[]  \033[7mC A T\033[0m {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")\033[0m")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -192,9 +192,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"r{Fore.RED}[]  \033[103mC A T\033[0m {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-                await asyncio.sleep(0.5)
-                print(f"r{Fore.WHITE}[]  \033[7mC A T\033[0m {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+                print(f"{Fore.RED}[]  \033[103mC A T\033[0m {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")\033[0m")
+                print(f"{Fore.WHITE}[]  \033[7mC A T\033[0m {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")\033[0m")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
