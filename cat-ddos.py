@@ -43,7 +43,7 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 os.system("clear")
 os.system(f"\033[103mhttps://github.com/kunfayz6-lab/\033[0m")
-print(f"{Fore.LIGHTGREEN_EX}.  FOR an INDEPENDENT PALESTINE..!!")
+print(f"{Fore.LIGHTGREEN_EX}.   FOR an INDEPENDENT PALESTINE..!!")
 time.sleep(5)
 print("Loading.......")
 
@@ -290,13 +290,13 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"{Fore.CYAN}┌[Cyber Attack Team")
-        username = input(f"{Fore.CYAN}└> Username please:   \033[31m")
+        username = input(f"{Fore.CYAN}└> Username please:  \033[32m")
         print(f"{Fore.GREEN}┌[Cyber Attack Team")
-        password = input(f"{Fore.GREEN}└> Your password: \033[31m")
+        password = input(f"{Fore.GREEN}└> Your password:  \033[32m")
 
         if username == 'tanya' and password == 'janda sebelah':
             
-            print(f"\033[103m••••>> FUCKING ZIONIST...!!\033[0m")
+            print(f"\033[103m••••>>    FUCKING ZIONIST...!!\033[0m")
             break
         else:
             print('Incorrect credentials. Check if you have Caps lock on and try again.')
