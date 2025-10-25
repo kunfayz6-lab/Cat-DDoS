@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}[]  \033[103mC\033[0m \033[106mA\033[0m \033[103mT\033[0m") {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
-            print(f"\r{Fore.WHITE}[]  \033[104mC\033[0m \033[7mA\033[0m \033[41mT\033[0m") {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
+            print(f"{Fore.RED}[]  \033[103mC \033[106mA \033[103mT\033[0m") {Fore.WHITE} •>  {Fore.BLUE}Request {Fore.GREEN}" +str(url)+ ")")
+            print(f"{Fore.WHITE}[]  \033[104mC \033[7mA \033[41mT\033[0m") {Fore.MAGENTA}•> {Fore.CYAN}Attack° {Fore.MAGENTA}" +str(url)+ ")")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
