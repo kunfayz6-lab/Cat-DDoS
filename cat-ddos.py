@@ -94,8 +94,8 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining_time:.2f} {Fore.BLUE} Sec left{' ' * 26}")
-            print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request-Attack {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
-            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T \033[7mRequest-Attack\033[0m {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
+            print(f"\r{Fore.RED}[] {Fore.CYAN}C A T  {Fore.BLUE}Request-Attack  {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
+            print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T  \033[7mRequest-Attack\033[0m  {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}••⟩  {Fore.YELLOW}C A T {Fore.CYAN} Attack has been completed|\n")
@@ -192,8 +192,8 @@ async def run_stress_test(url: str, duration: int, concurrency: int,
                 stdout.write(f"\r{Fore.BLUE}[*]{Fore.RED} {remaining:6.2f} {Fore.BLUE} Sec left{' ' * 26}")
                 stdout.flush()
                 # Tambahkan gaya progress seperti countdown asli
-                print(f"\r{Fore.RED}[] {Fore.CYAN}C A T {Fore.BLUE}Request-Attack {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
-                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T \033[7mRequest-Attack\033[0m {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
+                print(f"\r{Fore.RED}[] {Fore.CYAN}C A T  {Fore.BLUE}Request-Attack  {Fore.WHITE}Sent  \033[103m" +str(url)+ "\033[0m")
+                print(f"\r{Fore.WHITE}[] {Fore.YELLOW}C A T  \033[7mRequest-Attack\033[0m  {Fore.YELLOW}Sent  \033[32m" +str(url)+ "\033[0m")
                 await asyncio.sleep(0.5)
 
         prog_task = asyncio.create_task(progress())
@@ -290,13 +290,13 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"{Fore.CYAN}┌[Cyber Attack Team")
-        username = input(f"{Fore.CYAN}└> Username please:  \033[32m")
+        username = input(f"{Fore.CYAN}└> Username please:  \033[33m")
         print(f"{Fore.GREEN}┌[Cyber Attack Team")
-        password = input(f"{Fore.GREEN}└> Your password:  \033[32m")
+        password = input(f"{Fore.GREEN}└> Your password:  \033[33m")
 
         if username == 'tanya' and password == 'janda sebelah':
             
-            print(f"\033[103m••••>>    FUCKING ZIONIST...!!\033[0m")
+            print(f"\033[103m••••>>     FUCKING ZIONIST...!!\033[0m")
             break
         else:
             print('Incorrect credentials. Check if you have Caps lock on and try again.')
