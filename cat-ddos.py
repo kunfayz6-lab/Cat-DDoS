@@ -294,7 +294,7 @@ if __name__ == "__main__":
         print(f"{Fore.GREEN}┌[Cyber Attack Team")
         password = input(f"{Fore.GREEN}└> Your password:  \033[33m")
 
-        if username == 'tanya' and password == 'janda sebelah':
+        if username == 'cat99' and password == 'cat99':
             
             print(f"\033[103m••••>>     FUCKING ZIONIST...!!\033[0m")
             break
