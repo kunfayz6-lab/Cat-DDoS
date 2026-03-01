@@ -289,9 +289,9 @@ if __name__ == "__main__":
 
     while attemps < 100:
         print(f"{Fore.CYAN}┌[Cyber Attack Team")
-        username = input(f"{Fore.CYAN}└> Username please:  \033[33m")
+        username = input(f"{Fore.CYAN}└> Username please:  \033[30m")
         print(f"{Fore.GREEN}┌[Cyber Attack Team")
-        password = input(f"{Fore.GREEN}└> Your password:  \033[33m")
+        password = input(f"{Fore.GREEN}└> Your password:  \033[30m")
 
         if username == 'cat99' and password == 'cat99':
             
